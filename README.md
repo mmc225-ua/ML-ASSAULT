@@ -1,9 +1,6 @@
 Para compilar, desde la carpeta del proyecto : 
-
-      g++ minimal_agent.cpp -o minimal_agent \
-          -I Arcade-Learning-Environment-0.6.1 \
-          -L Arcade-Learning-Environment-0.6.1 \
-          -lale -lz -lm -std=c++17
+    cd Arcade-Learning-Environment-0.6.1
+    g++ minimal_agent.cpp libale.so -o minimal_agent -Wl,-rpath=.
 
 Ejecutar y jugar : 
 
