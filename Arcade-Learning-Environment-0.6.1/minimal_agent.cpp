@@ -2,6 +2,8 @@
 #include <cmath>
 #include <cstdint>
 #include "src/ale_interface.hpp"
+#include <SDL/SDL.h>
+#include <ctime>
 
 // Constants
 constexpr uint32_t maxSteps = 7500;
@@ -20,26 +22,59 @@ int32_t getBallX(ALEInterface& alei) {
 ///////////////////////////////////////////////////////////////////////////////
 /// Do Next Agent Step
 ///////////////////////////////////////////////////////////////////////////////
+// reward_t agentStep(ALEInterface& alei) {
+//    static constexpr int32_t wide { 9 };
+//    static int32_t lives { alei.lives() };
+//    reward_t reward{0};
+
+//    // When we loose a live, we need to press FIRE to start again
+//    if (alei.lives() < lives) {
+//       lives = alei.lives();
+//       alei.act(PLAYER_A_FIRE);
+//    }
+
+//    // Apply rules.
+//    auto playerX { getPlayerX(alei) };
+//    auto ballX   { getBallX(alei)   };
+   
+//    if       (ballX < playerX + wide) { reward = alei.act(PLAYER_A_LEFT);   }
+//    else if  (ballX > playerX + wide) { reward = alei.act(PLAYER_A_RIGHT);  }
+   
+//    return reward + alei.act(PLAYER_A_NOOP);
+// }
+
 reward_t agentStep(ALEInterface& alei) {
-   static constexpr int32_t wide { 9 };
-   static int32_t lives { alei.lives() };
-   reward_t reward{0};
+    static int32_t lives { alei.lives() };
 
-   // When we loose a live, we need to press FIRE to start again
-   if (alei.lives() < lives) {
-      lives = alei.lives();
-      alei.act(PLAYER_A_FIRE);
-   }
+    // Si perdemos una vida, pulsamos FIRE para reanudar
+    if (alei.lives() < lives) {
+        lives = alei.lives();
+        alei.act(PLAYER_A_FIRE);
+    }
 
-   // Apply rules.
-   auto playerX { getPlayerX(alei) };
-   auto ballX   { getBallX(alei)   };
-   
-   if       (ballX < playerX + wide) { reward = alei.act(PLAYER_A_LEFT);   }
-   else if  (ballX > playerX + wide) { reward = alei.act(PLAYER_A_RIGHT);  }
-   
-   return reward + alei.act(PLAYER_A_NOOP);
+    // SDL 1.2: actualizar eventos y leer teclado
+    SDL_PumpEvents();
+    int nkeys = 0;
+    Uint8* kb = SDL_GetKeyState(&nkeys);
+
+    // Acción por defecto
+    Action a = PLAYER_A_NOOP;
+
+    // Controles: flechas y espacio
+    if (kb && kb[SDLK_LEFT])  {
+        a = PLAYER_A_LEFT;
+    }
+    if (kb && kb[SDLK_RIGHT]) {
+        a = PLAYER_A_RIGHT;
+    }
+    if (kb && kb[SDLK_SPACE]) {
+        a = PLAYER_A_FIRE;
+    }
+
+    // Ejecuta acción
+    return alei.act(a);
 }
+
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Print usage and exit

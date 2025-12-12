@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.pdb"
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.so"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.pdb"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.so"
   "CMakeFiles/ale-c-lib.dir/link.d"
   "CMakeFiles/ale-c-lib.dir/ale_python_interface/ale_c_wrapper.cpp.o"
   "CMakeFiles/ale-c-lib.dir/ale_python_interface/ale_c_wrapper.cpp.o.d"

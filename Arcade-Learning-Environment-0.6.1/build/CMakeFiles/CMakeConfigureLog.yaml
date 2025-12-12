@@ -60,7 +60,7 @@ events:
       - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
-      The system is: Linux - 6.12.48-1-MANJARO - x86_64
+      The system is: Linux - 6.12.44-3-MANJARO - x86_64
   -
     kind: "find-v1"
     backtrace:
@@ -251,7 +251,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/4.1.1/CompilerIdC/a.out
+        /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/4.1.1/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -1146,7 +1146,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/4.1.1/CompilerIdCXX/a.out
+        /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/4.1.1/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -1351,8 +1351,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl"
-      binary: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl"
+      source: "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk"
+      binary: "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -1360,13 +1360,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl'
+        Change Dir: '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b0b34/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_b0b34.dir/build.make CMakeFiles/cmTC_b0b34.dir/build
-        make[1]: Entering directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl'
-        Building C object CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_43e2b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_43e2b.dir/build.make CMakeFiles/cmTC_43e2b.dir/build
+        make[1]: Entering directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk'
+        Building C object CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -1374,8 +1374,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20250813 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b0b34.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccuO3E2K.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_43e2b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc4ujcBV.s
         GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1389,14 +1389,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/'
-         as -v --64 -o CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o /tmp/ccuO3E2K.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/'
+         as -v --64 -o CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o /tmp/cc4ujcBV.s
         GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_b0b34
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0b34.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_43e2b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43e2b.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1407,14 +1407,14 @@ events:
         gcc version 15.2.1 20250813 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b0b34' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b0b34.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKOUTk4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b0b34 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_43e2b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_43e2b.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccF0m0bi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_43e2b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20250813
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKOUTk4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b0b34 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccF0m0bi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_43e2b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b0b34' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b0b34.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -o cmTC_b0b34
-        make[1]: Leaving directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_43e2b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_43e2b.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -o cmTC_43e2b
+        make[1]: Leaving directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk'
         
       exitCode: 0
   -
@@ -1449,13 +1449,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl']
+        ignore line: [Change Dir: '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b0b34/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_b0b34.dir/build.make CMakeFiles/cmTC_b0b34.dir/build]
-        ignore line: [make[1]: Entering directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-C7KAJl']
-        ignore line: [Building C object CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_43e2b/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_43e2b.dir/build.make CMakeFiles/cmTC_43e2b.dir/build]
+        ignore line: [make[1]: Entering directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-qPxIlk']
+        ignore line: [Building C object CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1463,8 +1463,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b0b34.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccuO3E2K.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_43e2b.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/cc4ujcBV.s]
         ignore line: [GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1478,14 +1478,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o /tmp/ccuO3E2K.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o /tmp/cc4ujcBV.s]
         ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_b0b34]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0b34.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_43e2b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43e2b.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1496,13 +1496,13 @@ events:
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b0b34' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_b0b34.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKOUTk4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b0b34 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_43e2b' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_43e2b.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccF0m0bi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_43e2b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccKOUTk4.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccF0m0bi.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1517,7 +1517,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_b0b34] ==> ignore
+          arg [cmTC_43e2b] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1529,7 +1529,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [--push-state] ==> ignore
           arg [--as-needed] ==> ignore
@@ -1544,7 +1544,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20250813]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccKOUTk4.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_b0b34 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_b0b34.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccF0m0bi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_43e2b /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_43e2b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'C': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1581,8 +1581,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI"
-      binary: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI"
+      source: "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm"
+      binary: "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -1591,13 +1591,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI'
+        Change Dir: '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_abef3/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_abef3.dir/build.make CMakeFiles/cmTC_abef3.dir/build
-        make[1]: Entering directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI'
-        Building CXX object CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cbfbc/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cbfbc.dir/build.make CMakeFiles/cmTC_cbfbc.dir/build
+        make[1]: Entering directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm'
+        Building CXX object CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
@@ -1605,8 +1605,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.1 20250813 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_abef3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccHD6Fcu.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbfbc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccpZztIN.s
         GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1623,14 +1623,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 452a313327dacf71986995db29f6855a
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/'
-         as -v --64 -o CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHD6Fcu.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/'
+         as -v --64 -o CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpZztIN.s
         GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_abef3
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abef3.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_cbfbc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbfbc.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
@@ -1641,14 +1641,14 @@ events:
         gcc version 15.2.1 20250813 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abef3.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5wKdEm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_abef3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbfbc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cbfbc.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVtjNnQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cbfbc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         collect2 version 15.2.1 20250813
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5wKdEm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_abef3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVtjNnQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cbfbc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.45.0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abef3.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_abef3
-        make[1]: Leaving directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbfbc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cbfbc.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cbfbc
+        make[1]: Leaving directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm'
         
       exitCode: 0
   -
@@ -1689,13 +1689,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI']
+        ignore line: [Change Dir: '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_abef3/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_abef3.dir/build.make CMakeFiles/cmTC_abef3.dir/build]
-        ignore line: [make[1]: Entering directory '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-3P92sI']
-        ignore line: [Building CXX object CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cbfbc/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_cbfbc.dir/build.make CMakeFiles/cmTC_cbfbc.dir/build]
+        ignore line: [make[1]: Entering directory '/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-91BQGm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1703,8 +1703,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_abef3.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccHD6Fcu.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbfbc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccpZztIN.s]
         ignore line: [GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1721,14 +1721,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 452a313327dacf71986995db29f6855a]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHD6Fcu.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccpZztIN.s]
         ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_abef3]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abef3.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_cbfbc]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbfbc.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
@@ -1739,13 +1739,13 @@ events:
         ignore line: [gcc version 15.2.1 20250813 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_abef3' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_abef3.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5wKdEm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_abef3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbfbc' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_cbfbc.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVtjNnQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cbfbc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc5wKdEm.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccVtjNnQ.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1760,7 +1760,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_abef3] ==> ignore
+          arg [cmTC_cbfbc] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
@@ -1772,7 +1772,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1783,7 +1783,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 15.2.1 20250813]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5wKdEm.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_abef3 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_abef3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVtjNnQ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_cbfbc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbfbc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1811,782 +1811,4 @@ events:
     message: |
       Running the CXX compiler's linker: "/usr/bin/ld" "-v"
       GNU ld (GNU Binutils) 2.45.0
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindSDL.cmake:178 (find_path)"
-      - "CMakeLists.txt:25 (find_package)"
-    mode: "path"
-    variable: "SDL_INCLUDE_DIR"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "SDL.h"
-    candidate_directories:
-      - "/home/cpc/.local/bin/SDL/"
-      - "/home/cpc/.local/bin/SDL12/"
-      - "/home/cpc/.local/bin/SDL11/"
-      - "/home/cpc/.local/bin/include/SDL/"
-      - "/home/cpc/.local/bin/include/SDL12/"
-      - "/home/cpc/.local/bin/include/SDL11/"
-      - "/home/cpc/.local/bin/include/"
-      - "/home/cpc/.local/bin/"
-      - "/usr/local/bin/SDL/"
-      - "/usr/local/bin/SDL12/"
-      - "/usr/local/bin/SDL11/"
-      - "/usr/local/bin/include/SDL/"
-      - "/usr/local/bin/include/SDL12/"
-      - "/usr/local/bin/include/SDL11/"
-      - "/usr/local/bin/include/"
-      - "/usr/local/bin/"
-      - "/usr/bin/SDL/"
-      - "/usr/bin/SDL12/"
-      - "/usr/bin/SDL11/"
-      - "/usr/bin/include/SDL/"
-      - "/usr/bin/include/SDL12/"
-      - "/usr/bin/include/SDL11/"
-      - "/usr/bin/include/"
-      - "/usr/bin/"
-      - "/bin/SDL/"
-      - "/bin/SDL12/"
-      - "/bin/SDL11/"
-      - "/bin/include/SDL/"
-      - "/bin/include/SDL12/"
-      - "/bin/include/SDL11/"
-      - "/bin/include/"
-      - "/bin/"
-      - "/usr/local/sbin/SDL/"
-      - "/usr/local/sbin/SDL12/"
-      - "/usr/local/sbin/SDL11/"
-      - "/usr/local/sbin/include/SDL/"
-      - "/usr/local/sbin/include/SDL12/"
-      - "/usr/local/sbin/include/SDL11/"
-      - "/usr/local/sbin/include/"
-      - "/usr/local/sbin/"
-      - "/usr/lib/jvm/default/bin/SDL/"
-      - "/usr/lib/jvm/default/bin/SDL12/"
-      - "/usr/lib/jvm/default/bin/SDL11/"
-      - "/usr/lib/jvm/default/bin/include/SDL/"
-      - "/usr/lib/jvm/default/bin/include/SDL12/"
-      - "/usr/lib/jvm/default/bin/include/SDL11/"
-      - "/usr/lib/jvm/default/bin/include/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/SDL/"
-      - "/usr/bin/site_perl/SDL12/"
-      - "/usr/bin/site_perl/SDL11/"
-      - "/usr/bin/site_perl/include/SDL/"
-      - "/usr/bin/site_perl/include/SDL12/"
-      - "/usr/bin/site_perl/include/SDL11/"
-      - "/usr/bin/site_perl/include/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/SDL/"
-      - "/usr/bin/vendor_perl/SDL12/"
-      - "/usr/bin/vendor_perl/SDL11/"
-      - "/usr/bin/vendor_perl/include/SDL/"
-      - "/usr/bin/vendor_perl/include/SDL12/"
-      - "/usr/bin/vendor_perl/include/SDL11/"
-      - "/usr/bin/vendor_perl/include/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/SDL/"
-      - "/usr/bin/core_perl/SDL12/"
-      - "/usr/bin/core_perl/SDL11/"
-      - "/usr/bin/core_perl/include/SDL/"
-      - "/usr/bin/core_perl/include/SDL12/"
-      - "/usr/bin/core_perl/include/SDL11/"
-      - "/usr/bin/core_perl/include/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/SDL/"
-      - "/usr/lib/rustup/bin/SDL12/"
-      - "/usr/lib/rustup/bin/SDL11/"
-      - "/usr/lib/rustup/bin/include/SDL/"
-      - "/usr/lib/rustup/bin/include/SDL12/"
-      - "/usr/lib/rustup/bin/include/SDL11/"
-      - "/usr/lib/rustup/bin/include/"
-      - "/usr/lib/rustup/bin/"
-      - "/var/lib/snapd/snap/bin/SDL/"
-      - "/var/lib/snapd/snap/bin/SDL12/"
-      - "/var/lib/snapd/snap/bin/SDL11/"
-      - "/var/lib/snapd/snap/bin/include/SDL/"
-      - "/var/lib/snapd/snap/bin/include/SDL12/"
-      - "/var/lib/snapd/snap/bin/include/SDL11/"
-      - "/var/lib/snapd/snap/bin/include/"
-      - "/var/lib/snapd/snap/bin/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL12/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL11/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL12/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL11/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL/"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL12/"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL11/"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL/"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL12/"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL11/"
-      - "/home/cpc/gbtelera/tools/rgbds/include/"
-      - "/home/cpc/gbtelera/tools/rgbds/"
-      - "/home/cpc/gbtelera/tools/scripts/SDL/"
-      - "/home/cpc/gbtelera/tools/scripts/SDL12/"
-      - "/home/cpc/gbtelera/tools/scripts/SDL11/"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL/"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL12/"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL11/"
-      - "/home/cpc/gbtelera/tools/scripts/include/"
-      - "/home/cpc/gbtelera/tools/scripts/"
-      - "/usr/local/include/SDL/"
-      - "/usr/local/include/SDL12/"
-      - "/usr/local/include/SDL11/"
-      - "/usr/local/include/include/SDL/"
-      - "/usr/local/include/include/SDL12/"
-      - "/usr/local/include/include/SDL11/"
-      - "/usr/local/include/include/"
-      - "/usr/local/include/"
-      - "/usr/local/SDL/"
-      - "/usr/local/SDL12/"
-      - "/usr/local/SDL11/"
-      - "/usr/local/include/SDL/"
-      - "/usr/local/include/SDL12/"
-      - "/usr/local/include/SDL11/"
-      - "/usr/local/include/"
-      - "/usr/local/"
-      - "/usr/include/SDL/"
-      - "/usr/include/SDL12/"
-      - "/usr/include/SDL11/"
-      - "/usr/include/include/SDL/"
-      - "/usr/include/include/SDL12/"
-      - "/usr/include/include/SDL11/"
-      - "/usr/include/include/"
-      - "/usr/include/"
-      - "/usr/SDL/"
-      - "/usr/SDL12/"
-      - "/usr/SDL11/"
-      - "/usr/include/SDL/"
-      - "/usr/include/SDL12/"
-      - "/usr/include/SDL11/"
-      - "/usr/include/"
-      - "/usr/"
-      - "/include/SDL/"
-      - "/include/SDL12/"
-      - "/include/SDL11/"
-      - "/include/include/SDL/"
-      - "/include/include/SDL12/"
-      - "/include/include/SDL11/"
-      - "/include/include/"
-      - "/include/"
-      - "/usr/X11R6/include/SDL/"
-      - "/usr/X11R6/include/SDL12/"
-      - "/usr/X11R6/include/SDL11/"
-      - "/usr/X11R6/include/include/SDL/"
-      - "/usr/X11R6/include/include/SDL12/"
-      - "/usr/X11R6/include/include/SDL11/"
-      - "/usr/X11R6/include/include/"
-      - "/usr/X11R6/include/"
-      - "/usr/X11R6/SDL/"
-      - "/usr/X11R6/SDL12/"
-      - "/usr/X11R6/SDL11/"
-      - "/usr/X11R6/include/SDL/"
-      - "/usr/X11R6/include/SDL12/"
-      - "/usr/X11R6/include/SDL11/"
-      - "/usr/X11R6/include/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/include/SDL/"
-      - "/usr/pkg/include/SDL12/"
-      - "/usr/pkg/include/SDL11/"
-      - "/usr/pkg/include/include/SDL/"
-      - "/usr/pkg/include/include/SDL12/"
-      - "/usr/pkg/include/include/SDL11/"
-      - "/usr/pkg/include/include/"
-      - "/usr/pkg/include/"
-      - "/usr/pkg/SDL/"
-      - "/usr/pkg/SDL12/"
-      - "/usr/pkg/SDL11/"
-      - "/usr/pkg/include/SDL/"
-      - "/usr/pkg/include/SDL12/"
-      - "/usr/pkg/include/SDL11/"
-      - "/usr/pkg/include/"
-      - "/usr/pkg/"
-      - "/opt/include/SDL/"
-      - "/opt/include/SDL12/"
-      - "/opt/include/SDL11/"
-      - "/opt/include/include/SDL/"
-      - "/opt/include/include/SDL12/"
-      - "/opt/include/include/SDL11/"
-      - "/opt/include/include/"
-      - "/opt/include/"
-      - "/opt/SDL/"
-      - "/opt/SDL12/"
-      - "/opt/SDL11/"
-      - "/opt/include/SDL/"
-      - "/opt/include/SDL12/"
-      - "/opt/include/SDL11/"
-      - "/opt/include/"
-      - "/opt/"
-      - "/usr/include/X11/SDL/"
-      - "/usr/include/X11/SDL12/"
-      - "/usr/include/X11/SDL11/"
-      - "/usr/include/X11/include/SDL/"
-      - "/usr/include/X11/include/SDL12/"
-      - "/usr/include/X11/include/SDL11/"
-      - "/usr/include/X11/include/"
-      - "/usr/include/X11/"
-    searched_directories:
-      - "/home/cpc/.local/bin/SDL/SDL.h"
-      - "/home/cpc/.local/bin/SDL12/SDL.h"
-      - "/home/cpc/.local/bin/SDL11/SDL.h"
-      - "/home/cpc/.local/bin/include/SDL/SDL.h"
-      - "/home/cpc/.local/bin/include/SDL12/SDL.h"
-      - "/home/cpc/.local/bin/include/SDL11/SDL.h"
-      - "/home/cpc/.local/bin/include/SDL.h"
-      - "/home/cpc/.local/bin/SDL.h"
-      - "/usr/local/bin/SDL/SDL.h"
-      - "/usr/local/bin/SDL12/SDL.h"
-      - "/usr/local/bin/SDL11/SDL.h"
-      - "/usr/local/bin/include/SDL/SDL.h"
-      - "/usr/local/bin/include/SDL12/SDL.h"
-      - "/usr/local/bin/include/SDL11/SDL.h"
-      - "/usr/local/bin/include/SDL.h"
-      - "/usr/local/bin/SDL.h"
-      - "/usr/bin/SDL/SDL.h"
-      - "/usr/bin/SDL12/SDL.h"
-      - "/usr/bin/SDL11/SDL.h"
-      - "/usr/bin/include/SDL/SDL.h"
-      - "/usr/bin/include/SDL12/SDL.h"
-      - "/usr/bin/include/SDL11/SDL.h"
-      - "/usr/bin/include/SDL.h"
-      - "/usr/bin/SDL.h"
-      - "/bin/SDL/SDL.h"
-      - "/bin/SDL12/SDL.h"
-      - "/bin/SDL11/SDL.h"
-      - "/bin/include/SDL/SDL.h"
-      - "/bin/include/SDL12/SDL.h"
-      - "/bin/include/SDL11/SDL.h"
-      - "/bin/include/SDL.h"
-      - "/bin/SDL.h"
-      - "/usr/local/sbin/SDL/SDL.h"
-      - "/usr/local/sbin/SDL12/SDL.h"
-      - "/usr/local/sbin/SDL11/SDL.h"
-      - "/usr/local/sbin/include/SDL/SDL.h"
-      - "/usr/local/sbin/include/SDL12/SDL.h"
-      - "/usr/local/sbin/include/SDL11/SDL.h"
-      - "/usr/local/sbin/include/SDL.h"
-      - "/usr/local/sbin/SDL.h"
-      - "/usr/lib/jvm/default/bin/SDL/SDL.h"
-      - "/usr/lib/jvm/default/bin/SDL12/SDL.h"
-      - "/usr/lib/jvm/default/bin/SDL11/SDL.h"
-      - "/usr/lib/jvm/default/bin/include/SDL/SDL.h"
-      - "/usr/lib/jvm/default/bin/include/SDL12/SDL.h"
-      - "/usr/lib/jvm/default/bin/include/SDL11/SDL.h"
-      - "/usr/lib/jvm/default/bin/include/SDL.h"
-      - "/usr/lib/jvm/default/bin/SDL.h"
-      - "/usr/bin/site_perl/SDL/SDL.h"
-      - "/usr/bin/site_perl/SDL12/SDL.h"
-      - "/usr/bin/site_perl/SDL11/SDL.h"
-      - "/usr/bin/site_perl/include/SDL/SDL.h"
-      - "/usr/bin/site_perl/include/SDL12/SDL.h"
-      - "/usr/bin/site_perl/include/SDL11/SDL.h"
-      - "/usr/bin/site_perl/include/SDL.h"
-      - "/usr/bin/site_perl/SDL.h"
-      - "/usr/bin/vendor_perl/SDL/SDL.h"
-      - "/usr/bin/vendor_perl/SDL12/SDL.h"
-      - "/usr/bin/vendor_perl/SDL11/SDL.h"
-      - "/usr/bin/vendor_perl/include/SDL/SDL.h"
-      - "/usr/bin/vendor_perl/include/SDL12/SDL.h"
-      - "/usr/bin/vendor_perl/include/SDL11/SDL.h"
-      - "/usr/bin/vendor_perl/include/SDL.h"
-      - "/usr/bin/vendor_perl/SDL.h"
-      - "/usr/bin/core_perl/SDL/SDL.h"
-      - "/usr/bin/core_perl/SDL12/SDL.h"
-      - "/usr/bin/core_perl/SDL11/SDL.h"
-      - "/usr/bin/core_perl/include/SDL/SDL.h"
-      - "/usr/bin/core_perl/include/SDL12/SDL.h"
-      - "/usr/bin/core_perl/include/SDL11/SDL.h"
-      - "/usr/bin/core_perl/include/SDL.h"
-      - "/usr/bin/core_perl/SDL.h"
-      - "/usr/lib/rustup/bin/SDL/SDL.h"
-      - "/usr/lib/rustup/bin/SDL12/SDL.h"
-      - "/usr/lib/rustup/bin/SDL11/SDL.h"
-      - "/usr/lib/rustup/bin/include/SDL/SDL.h"
-      - "/usr/lib/rustup/bin/include/SDL12/SDL.h"
-      - "/usr/lib/rustup/bin/include/SDL11/SDL.h"
-      - "/usr/lib/rustup/bin/include/SDL.h"
-      - "/usr/lib/rustup/bin/SDL.h"
-      - "/var/lib/snapd/snap/bin/SDL/SDL.h"
-      - "/var/lib/snapd/snap/bin/SDL12/SDL.h"
-      - "/var/lib/snapd/snap/bin/SDL11/SDL.h"
-      - "/var/lib/snapd/snap/bin/include/SDL/SDL.h"
-      - "/var/lib/snapd/snap/bin/include/SDL12/SDL.h"
-      - "/var/lib/snapd/snap/bin/include/SDL11/SDL.h"
-      - "/var/lib/snapd/snap/bin/include/SDL.h"
-      - "/var/lib/snapd/snap/bin/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL12/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL11/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL12/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL11/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/include/SDL.h"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL12/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL11/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL12/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL11/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/include/SDL.h"
-      - "/home/cpc/gbtelera/tools/rgbds/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/SDL/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/SDL12/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/SDL11/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL12/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL11/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/include/SDL.h"
-      - "/home/cpc/gbtelera/tools/scripts/SDL.h"
-      - "/usr/local/include/SDL/SDL.h"
-      - "/usr/local/include/SDL12/SDL.h"
-      - "/usr/local/include/SDL11/SDL.h"
-      - "/usr/local/include/include/SDL/SDL.h"
-      - "/usr/local/include/include/SDL12/SDL.h"
-      - "/usr/local/include/include/SDL11/SDL.h"
-      - "/usr/local/include/include/SDL.h"
-      - "/usr/local/include/SDL.h"
-      - "/usr/local/SDL/SDL.h"
-      - "/usr/local/SDL12/SDL.h"
-      - "/usr/local/SDL11/SDL.h"
-      - "/usr/local/include/SDL/SDL.h"
-      - "/usr/local/include/SDL12/SDL.h"
-      - "/usr/local/include/SDL11/SDL.h"
-      - "/usr/local/include/SDL.h"
-      - "/usr/local/SDL.h"
-    found: "/usr/include/SDL/"
-    search_context:
-      ENV{PATH}:
-        - "/home/cpc/.local/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-        - "/var/lib/snapd/snap/bin"
-        - "/home/cpc/cpctelera/cpctelera/tools/scripts"
-        - "/home/cpc/gbtelera/tools/rgbds"
-        - "/home/cpc/gbtelera/tools/scripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_INCLUDE_PATH:
-        - "/usr/include/X11"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindSDL.cmake:194 (find_library)"
-      - "CMakeLists.txt:25 (find_package)"
-    mode: "library"
-    variable: "SDL_LIBRARY_TEMP"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "SDL"
-      - "SDL-1.1"
-    candidate_directories:
-      - "/home/cpc/.local/bin/lib/"
-      - "/home/cpc/.local/bin/lib/x64/"
-      - "/home/cpc/.local/bin/"
-      - "/usr/local/bin/lib/"
-      - "/usr/local/bin/lib/x64/"
-      - "/usr/local/bin/"
-      - "/usr/bin/lib/"
-      - "/usr/bin/lib/x64/"
-      - "/usr/bin/"
-      - "/bin/lib/"
-      - "/bin/lib/x64/"
-      - "/bin/"
-      - "/usr/local/sbin/lib/"
-      - "/usr/local/sbin/lib/x64/"
-      - "/usr/local/sbin/"
-      - "/usr/lib/jvm/default/bin/lib/"
-      - "/usr/lib/jvm/default/bin/lib/x64/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/lib/"
-      - "/usr/bin/site_perl/lib/x64/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/lib/"
-      - "/usr/bin/vendor_perl/lib/x64/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/lib/"
-      - "/usr/bin/core_perl/lib/x64/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/lib/"
-      - "/usr/lib/rustup/bin/lib/x64/"
-      - "/usr/lib/rustup/bin/"
-      - "/var/lib/snapd/snap/bin/lib/"
-      - "/var/lib/snapd/snap/bin/lib/x64/"
-      - "/var/lib/snapd/snap/bin/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/x64/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/x64/"
-      - "/home/cpc/gbtelera/tools/rgbds/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/x64/"
-      - "/home/cpc/gbtelera/tools/scripts/"
-      - "/usr/local/lib/lib/"
-      - "/usr/local/lib/lib/x64/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/x64/"
-      - "/usr/local/"
-      - "/usr/lib/lib/"
-      - "/usr/lib/lib/x64/"
-      - "/usr/lib/"
-      - "/usr/lib/"
-      - "/usr/lib/x64/"
-      - "/usr/"
-      - "/lib/lib/"
-      - "/lib/lib/x64/"
-      - "/lib/"
-      - "/usr/X11R6/lib/lib/"
-      - "/usr/X11R6/lib/lib/x64/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/lib/x64/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/lib/lib/"
-      - "/usr/pkg/lib/lib/x64/"
-      - "/usr/pkg/lib/"
-      - "/usr/pkg/lib/"
-      - "/usr/pkg/lib/x64/"
-      - "/usr/pkg/"
-      - "/opt/lib/lib/"
-      - "/opt/lib/lib/x64/"
-      - "/opt/lib/"
-      - "/opt/lib/"
-      - "/opt/lib/x64/"
-      - "/opt/"
-      - "/usr/lib/X11/lib/"
-      - "/usr/lib/X11/lib/x64/"
-      - "/usr/lib/X11/"
-    searched_directories:
-      - "/home/cpc/.local/bin/lib/"
-      - "/home/cpc/.local/bin/lib/x64/"
-      - "/home/cpc/.local/bin/"
-      - "/usr/local/bin/lib/"
-      - "/usr/local/bin/lib/x64/"
-      - "/usr/local/bin/"
-      - "/usr/bin/lib/"
-      - "/usr/bin/lib/x64/"
-      - "/usr/bin/"
-      - "/bin/lib/"
-      - "/bin/lib/x64/"
-      - "/bin/"
-      - "/usr/local/sbin/lib/"
-      - "/usr/local/sbin/lib/x64/"
-      - "/usr/local/sbin/"
-      - "/usr/lib/jvm/default/bin/lib/"
-      - "/usr/lib/jvm/default/bin/lib/x64/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/lib/"
-      - "/usr/bin/site_perl/lib/x64/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/lib/"
-      - "/usr/bin/vendor_perl/lib/x64/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/lib/"
-      - "/usr/bin/core_perl/lib/x64/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/lib/"
-      - "/usr/lib/rustup/bin/lib/x64/"
-      - "/usr/lib/rustup/bin/"
-      - "/var/lib/snapd/snap/bin/lib/"
-      - "/var/lib/snapd/snap/bin/lib/x64/"
-      - "/var/lib/snapd/snap/bin/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/x64/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/x64/"
-      - "/home/cpc/gbtelera/tools/rgbds/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/x64/"
-      - "/home/cpc/gbtelera/tools/scripts/"
-      - "/usr/local/lib/lib/"
-      - "/usr/local/lib/lib/x64/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/x64/"
-      - "/usr/local/"
-      - "/usr/lib/lib/"
-      - "/usr/lib/lib/x64/"
-    found: "/usr/lib/libSDL.so"
-    search_context:
-      ENV{PATH}:
-        - "/home/cpc/.local/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-        - "/var/lib/snapd/snap/bin"
-        - "/home/cpc/cpctelera/cpctelera/tools/scripts"
-        - "/home/cpc/gbtelera/tools/rgbds"
-        - "/home/cpc/gbtelera/tools/scripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/FindSDL.cmake:212 (find_library)"
-      - "CMakeLists.txt:25 (find_package)"
-    mode: "library"
-    variable: "SDLMAIN_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "SDLmain"
-      - "SDLmain-1.1"
-    candidate_directories:
-      - "/home/cpc/.local/bin/lib/"
-      - "/home/cpc/.local/bin/lib/x64/"
-      - "/home/cpc/.local/bin/"
-      - "/usr/local/bin/lib/"
-      - "/usr/local/bin/lib/x64/"
-      - "/usr/local/bin/"
-      - "/usr/bin/lib/"
-      - "/usr/bin/lib/x64/"
-      - "/usr/bin/"
-      - "/bin/lib/"
-      - "/bin/lib/x64/"
-      - "/bin/"
-      - "/usr/local/sbin/lib/"
-      - "/usr/local/sbin/lib/x64/"
-      - "/usr/local/sbin/"
-      - "/usr/lib/jvm/default/bin/lib/"
-      - "/usr/lib/jvm/default/bin/lib/x64/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/lib/"
-      - "/usr/bin/site_perl/lib/x64/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/lib/"
-      - "/usr/bin/vendor_perl/lib/x64/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/lib/"
-      - "/usr/bin/core_perl/lib/x64/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/lib/"
-      - "/usr/lib/rustup/bin/lib/x64/"
-      - "/usr/lib/rustup/bin/"
-      - "/var/lib/snapd/snap/bin/lib/"
-      - "/var/lib/snapd/snap/bin/lib/x64/"
-      - "/var/lib/snapd/snap/bin/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/x64/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/x64/"
-      - "/home/cpc/gbtelera/tools/rgbds/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/x64/"
-      - "/home/cpc/gbtelera/tools/scripts/"
-      - "/usr/local/lib/lib/"
-      - "/usr/local/lib/lib/x64/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/x64/"
-      - "/usr/local/"
-      - "/usr/lib/lib/"
-      - "/usr/lib/lib/x64/"
-      - "/usr/lib/"
-      - "/usr/lib/"
-      - "/usr/lib/x64/"
-      - "/usr/"
-      - "/lib/lib/"
-      - "/lib/lib/x64/"
-      - "/lib/"
-      - "/usr/X11R6/lib/lib/"
-      - "/usr/X11R6/lib/lib/x64/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/lib/x64/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/lib/lib/"
-      - "/usr/pkg/lib/lib/x64/"
-      - "/usr/pkg/lib/"
-      - "/usr/pkg/lib/"
-      - "/usr/pkg/lib/x64/"
-      - "/usr/pkg/"
-      - "/opt/lib/lib/"
-      - "/opt/lib/lib/x64/"
-      - "/opt/lib/"
-      - "/opt/lib/"
-      - "/opt/lib/x64/"
-      - "/opt/"
-      - "/usr/lib/X11/lib/"
-      - "/usr/lib/X11/lib/x64/"
-      - "/usr/lib/X11/"
-      - "/opt/lib/"
-      - "/opt/lib/x64/"
-      - "/opt/"
-    searched_directories:
-      - "/home/cpc/.local/bin/lib/"
-      - "/home/cpc/.local/bin/lib/x64/"
-      - "/home/cpc/.local/bin/"
-      - "/usr/local/bin/lib/"
-      - "/usr/local/bin/lib/x64/"
-      - "/usr/local/bin/"
-      - "/usr/bin/lib/"
-      - "/usr/bin/lib/x64/"
-      - "/usr/bin/"
-      - "/bin/lib/"
-      - "/bin/lib/x64/"
-      - "/bin/"
-      - "/usr/local/sbin/lib/"
-      - "/usr/local/sbin/lib/x64/"
-      - "/usr/local/sbin/"
-      - "/usr/lib/jvm/default/bin/lib/"
-      - "/usr/lib/jvm/default/bin/lib/x64/"
-      - "/usr/lib/jvm/default/bin/"
-      - "/usr/bin/site_perl/lib/"
-      - "/usr/bin/site_perl/lib/x64/"
-      - "/usr/bin/site_perl/"
-      - "/usr/bin/vendor_perl/lib/"
-      - "/usr/bin/vendor_perl/lib/x64/"
-      - "/usr/bin/vendor_perl/"
-      - "/usr/bin/core_perl/lib/"
-      - "/usr/bin/core_perl/lib/x64/"
-      - "/usr/bin/core_perl/"
-      - "/usr/lib/rustup/bin/lib/"
-      - "/usr/lib/rustup/bin/lib/x64/"
-      - "/usr/lib/rustup/bin/"
-      - "/var/lib/snapd/snap/bin/lib/"
-      - "/var/lib/snapd/snap/bin/lib/x64/"
-      - "/var/lib/snapd/snap/bin/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/lib/x64/"
-      - "/home/cpc/cpctelera/cpctelera/tools/scripts/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/"
-      - "/home/cpc/gbtelera/tools/rgbds/lib/x64/"
-      - "/home/cpc/gbtelera/tools/rgbds/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/"
-      - "/home/cpc/gbtelera/tools/scripts/lib/x64/"
-      - "/home/cpc/gbtelera/tools/scripts/"
-      - "/usr/local/lib/lib/"
-      - "/usr/local/lib/lib/x64/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/"
-      - "/usr/local/lib/x64/"
-      - "/usr/local/"
-      - "/usr/lib/lib/"
-      - "/usr/lib/lib/x64/"
-    found: "/usr/lib/libSDLmain.a"
-    search_context:
-      ENV{PATH}:
-        - "/home/cpc/.local/bin"
-        - "/usr/local/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/local/sbin"
-        - "/usr/lib/jvm/default/bin"
-        - "/usr/bin/site_perl"
-        - "/usr/bin/vendor_perl"
-        - "/usr/bin/core_perl"
-        - "/usr/lib/rustup/bin"
-        - "/var/lib/snapd/snap/bin"
-        - "/home/cpc/cpctelera/cpctelera/tools/scripts"
-        - "/home/cpc/gbtelera/tools/rgbds"
-        - "/home/cpc/gbtelera/tools/scripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/usr"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
-      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "/usr/share/cmake/Modules/FindSDL.cmake:228 (find_package)"
-      - "CMakeLists.txt:25 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg"
-      binary: "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg"
-    cmakeVariables:
-      CMAKE_C_FLAGS: ""
-      CMAKE_EXE_LINKER_FLAGS: ""
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg'
-        
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72a5f/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_72a5f.dir/build.make CMakeFiles/cmTC_72a5f.dir/build
-        make[1]: se entra en el directorio '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg'
-        Building C object CMakeFiles/cmTC_72a5f.dir/src.c.o
-        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_72a5f.dir/src.c.o -c /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg/src.c
-        Linking C executable cmTC_72a5f
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a5f.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_72a5f.dir/src.c.o -o cmTC_72a5f
-        make[1]: se sale del directorio '/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/CMakeScratch/TryCompile-ZU9BIg'
-        
-      exitCode: 0
 ...

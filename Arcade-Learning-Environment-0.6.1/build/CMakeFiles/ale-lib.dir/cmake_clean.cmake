@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ale-lib.dir/link.d"
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/libale.pdb"
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/libale.so"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/libale.pdb"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/libale.so"
   "CMakeFiles/ale-lib.dir/src/ale_interface.cpp.o"
   "CMakeFiles/ale-lib.dir/src/ale_interface.cpp.o.d"
   "CMakeFiles/ale-lib.dir/src/common/ColourPalette.cpp.o"
