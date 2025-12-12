@@ -1,6 +1,11 @@
 Para compilar, desde la carpeta del proyecto : <br>
-        cd Arcade-Learning-Environment-0.6.1 <br>
-        g++ minimal_agent.cpp libale.so -o minimal_agent -Wl,-rpath=.<br><br>
+        g++ Arcade-Learning-Environment-0.6.1/minimal_agent.cpp -o minimal_agent \
+  -I Arcade-Learning-Environment-0.6.1 \
+  -L Arcade-Learning-Environment-0.6.1 \
+  -lale -lz -lm -std=c++17 \
+  $(sdl-config --cflags --libs) \
+  -Wl,-rpath,$(pwd)/Arcade-Learning-Environment-0.6.1
+
 Ejecutar y jugar : <br>
-    cd Arcade-Learning-Environment-0.6.1<br>
-    ./minimal_agent supported/assault.bin<br>
+    ./minimal_agent ./Arcade-Learning-Environment-0.6.1/supported/assault.bin
+
