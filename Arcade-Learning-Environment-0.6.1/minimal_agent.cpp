@@ -56,7 +56,7 @@ reward_t agentStep(ALEInterface& alei, Action& chosenAction) {
         alei.act(PLAYER_A_FIRE);
     }
 
-    // Actualiza el estado del teclado (proesa eventos del sistema para poder leer las teclas pulsadas)
+    // Actualiza el estado del teclado (procesa eventos del sistema para poder leer las teclas pulsadas)
     SDL_PumpEvents();
     int nkeys = 0;
     Uint8* kb = SDL_GetKeyState(&nkeys);
