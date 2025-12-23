@@ -48,49 +48,42 @@ int32_t getBallX(ALEInterface& alei) {
 //alei -> emulador de Atari ( Leemos RAM, consultamos vidas, ejecutamos acciones ...)
 //chosenAction -> Salida de la función. (Devolvemos qué acción se ha decidido para luego registrarla en el CSV)
 reward_t agentStep(ALEInterface& alei, Action& chosenAction) {
-    static int32_t lives { alei.lives() }; // Guarda el número de vidas
-    static int fireHold = 0; // Para el disparo
+    static int32_t lives { alei.lives() };
+    static int fireHold = 0;
 
-    if (alei.lives() < lives) { // Comprueba si he muerto
+    if (alei.lives() < lives) {
         lives = alei.lives();
         alei.act(PLAYER_A_FIRE);
     }
 
-    // Actualiza el estado del teclado (procesa eventos del sistema para poder leer las teclas pulsadas)
     SDL_PumpEvents();
     int nkeys = 0;
     Uint8* kb = SDL_GetKeyState(&nkeys);
 
-    // Le asignamos nombre a las teclas (por legibilidad)
     bool left  = kb && kb[SDLK_LEFT];
     bool right = kb && kb[SDLK_RIGHT];
-    bool up    = kb && kb[SDLK_UP];
     bool fire  = kb && kb[SDLK_SPACE];
 
-    //Si no se pulsa nada, no hacemos nada
-    Action a = PLAYER_A_NOOP;
-
-    // Para mantener durante 3 frames la acción de disparo por si no se registra en 1 solo frame
-    // Aunque "dispare" durante 3 frames seguidos, solo sale 1 bala debido al cooldown del propio juego
     if (fire) fireHold = 3;
     if (fireHold > 0) --fireHold;
-
     bool wantFire = fire || (fireHold > 0);
 
-    //Dependiendo de la tecla pulsada, ejecuto una acción u otra
+    Action a = PLAYER_A_NOOP;
+
     if (wantFire) {
+        // Disparo (sin movimiento)
         if (left)       a = PLAYER_A_LEFTFIRE;
         else if (right) a = PLAYER_A_RIGHTFIRE;
-        else            a = PLAYER_A_UPFIRE;
+        else            a = PLAYER_A_UPFIRE;   // vertical quieto
     } else {
+        // Movimiento (solo si NO estamos disparando)
         if (left)       a = PLAYER_A_LEFT;
         else if (right) a = PLAYER_A_RIGHT;
-        else if (up)    a = PLAYER_A_UP;
         else            a = PLAYER_A_NOOP;
     }
 
     chosenAction = a;
-    return alei.act(a); // recompensa que devuelve ALE tras ejecutar la acción (puntos / penalización) (Normalmente 0)
+    return alei.act(a);
 }
 
 

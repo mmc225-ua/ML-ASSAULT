@@ -10,6 +10,7 @@ Ejecutar y jugar SIN GRABAR: <br>
     ./minimal_agent ./Arcade-Learning-Environment-0.6.1/supported/assault.bin
 
 Ejecutar y jugar GRABANDO DATASET : <br>
+                -> OJO ! -> cambiar el Nº de assault_runX.csv cada partida, si no se sobreescriben los datos
         ./minimal_agent ./Arcade-Learning-Environment-0.6.1/supported/assault.bin assault_run1.csv
 
 
@@ -17,7 +18,7 @@ Ejecutar y jugar GRABANDO DATASET : <br>
 Controles : 
         flecha izq -> mover izq
         flecha der -> mover der
-        espacio/flecha up -> disparo vertical
+        espacio -> disparo vertical
         izq + espacio -> disparo izq
         der + espacio -> disparo der
 
