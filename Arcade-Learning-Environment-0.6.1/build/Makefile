@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1
+CMAKE_SOURCE_DIR = /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build
+CMAKE_BINARY_DIR = /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -201,6 +201,45 @@ ale-c-lib/fast:
 .PHONY : ale-c-lib/fast
 
 #=============================================================================
+# Target rules for targets named sharedLibraryInterfaceExample
+
+# Build rule for target.
+sharedLibraryInterfaceExample: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sharedLibraryInterfaceExample
+.PHONY : sharedLibraryInterfaceExample
+
+# fast build rule for target.
+sharedLibraryInterfaceExample/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceExample.dir/build.make CMakeFiles/sharedLibraryInterfaceExample.dir/build
+.PHONY : sharedLibraryInterfaceExample/fast
+
+#=============================================================================
+# Target rules for targets named fifoInterfaceExample
+
+# Build rule for target.
+fifoInterfaceExample: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fifoInterfaceExample
+.PHONY : fifoInterfaceExample
+
+# fast build rule for target.
+fifoInterfaceExample/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fifoInterfaceExample.dir/build.make CMakeFiles/fifoInterfaceExample.dir/build
+.PHONY : fifoInterfaceExample/fast
+
+#=============================================================================
+# Target rules for targets named sharedLibraryInterfaceWithModesExample
+
+# Build rule for target.
+sharedLibraryInterfaceWithModesExample: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sharedLibraryInterfaceWithModesExample
+.PHONY : sharedLibraryInterfaceWithModesExample
+
+# fast build rule for target.
+sharedLibraryInterfaceWithModesExample/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/build.make CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/build
+.PHONY : sharedLibraryInterfaceWithModesExample/fast
+
+#=============================================================================
 # Target rules for targets named uninstall
 
 # Build rule for target.
@@ -236,6 +275,78 @@ ale_python_interface/ale_c_wrapper.s: ale_python_interface/ale_c_wrapper.cpp.s
 ale_python_interface/ale_c_wrapper.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ale-c-lib.dir/build.make CMakeFiles/ale-c-lib.dir/ale_python_interface/ale_c_wrapper.cpp.s
 .PHONY : ale_python_interface/ale_c_wrapper.cpp.s
+
+doc/examples/fifoInterfaceExample.o: doc/examples/fifoInterfaceExample.cpp.o
+.PHONY : doc/examples/fifoInterfaceExample.o
+
+# target to build an object file
+doc/examples/fifoInterfaceExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fifoInterfaceExample.dir/build.make CMakeFiles/fifoInterfaceExample.dir/doc/examples/fifoInterfaceExample.cpp.o
+.PHONY : doc/examples/fifoInterfaceExample.cpp.o
+
+doc/examples/fifoInterfaceExample.i: doc/examples/fifoInterfaceExample.cpp.i
+.PHONY : doc/examples/fifoInterfaceExample.i
+
+# target to preprocess a source file
+doc/examples/fifoInterfaceExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fifoInterfaceExample.dir/build.make CMakeFiles/fifoInterfaceExample.dir/doc/examples/fifoInterfaceExample.cpp.i
+.PHONY : doc/examples/fifoInterfaceExample.cpp.i
+
+doc/examples/fifoInterfaceExample.s: doc/examples/fifoInterfaceExample.cpp.s
+.PHONY : doc/examples/fifoInterfaceExample.s
+
+# target to generate assembly for a file
+doc/examples/fifoInterfaceExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fifoInterfaceExample.dir/build.make CMakeFiles/fifoInterfaceExample.dir/doc/examples/fifoInterfaceExample.cpp.s
+.PHONY : doc/examples/fifoInterfaceExample.cpp.s
+
+doc/examples/sharedLibraryInterfaceExample.o: doc/examples/sharedLibraryInterfaceExample.cpp.o
+.PHONY : doc/examples/sharedLibraryInterfaceExample.o
+
+# target to build an object file
+doc/examples/sharedLibraryInterfaceExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceExample.dir/build.make CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.o
+.PHONY : doc/examples/sharedLibraryInterfaceExample.cpp.o
+
+doc/examples/sharedLibraryInterfaceExample.i: doc/examples/sharedLibraryInterfaceExample.cpp.i
+.PHONY : doc/examples/sharedLibraryInterfaceExample.i
+
+# target to preprocess a source file
+doc/examples/sharedLibraryInterfaceExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceExample.dir/build.make CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.i
+.PHONY : doc/examples/sharedLibraryInterfaceExample.cpp.i
+
+doc/examples/sharedLibraryInterfaceExample.s: doc/examples/sharedLibraryInterfaceExample.cpp.s
+.PHONY : doc/examples/sharedLibraryInterfaceExample.s
+
+# target to generate assembly for a file
+doc/examples/sharedLibraryInterfaceExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceExample.dir/build.make CMakeFiles/sharedLibraryInterfaceExample.dir/doc/examples/sharedLibraryInterfaceExample.cpp.s
+.PHONY : doc/examples/sharedLibraryInterfaceExample.cpp.s
+
+doc/examples/sharedLibraryInterfaceWithModesExample.o: doc/examples/sharedLibraryInterfaceWithModesExample.cpp.o
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.o
+
+# target to build an object file
+doc/examples/sharedLibraryInterfaceWithModesExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/build.make CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/doc/examples/sharedLibraryInterfaceWithModesExample.cpp.o
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.cpp.o
+
+doc/examples/sharedLibraryInterfaceWithModesExample.i: doc/examples/sharedLibraryInterfaceWithModesExample.cpp.i
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.i
+
+# target to preprocess a source file
+doc/examples/sharedLibraryInterfaceWithModesExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/build.make CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/doc/examples/sharedLibraryInterfaceWithModesExample.cpp.i
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.cpp.i
+
+doc/examples/sharedLibraryInterfaceWithModesExample.s: doc/examples/sharedLibraryInterfaceWithModesExample.cpp.s
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.s
+
+# target to generate assembly for a file
+doc/examples/sharedLibraryInterfaceWithModesExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/build.make CMakeFiles/sharedLibraryInterfaceWithModesExample.dir/doc/examples/sharedLibraryInterfaceWithModesExample.cpp.s
+.PHONY : doc/examples/sharedLibraryInterfaceWithModesExample.cpp.s
 
 src/ale_interface.o: src/ale_interface.cpp.o
 .PHONY : src/ale_interface.o
@@ -4837,9 +4948,21 @@ help:
 	@echo "... ale-bin"
 	@echo "... ale-c-lib"
 	@echo "... ale-lib"
+	@echo "... fifoInterfaceExample"
+	@echo "... sharedLibraryInterfaceExample"
+	@echo "... sharedLibraryInterfaceWithModesExample"
 	@echo "... ale_python_interface/ale_c_wrapper.o"
 	@echo "... ale_python_interface/ale_c_wrapper.i"
 	@echo "... ale_python_interface/ale_c_wrapper.s"
+	@echo "... doc/examples/fifoInterfaceExample.o"
+	@echo "... doc/examples/fifoInterfaceExample.i"
+	@echo "... doc/examples/fifoInterfaceExample.s"
+	@echo "... doc/examples/sharedLibraryInterfaceExample.o"
+	@echo "... doc/examples/sharedLibraryInterfaceExample.i"
+	@echo "... doc/examples/sharedLibraryInterfaceExample.s"
+	@echo "... doc/examples/sharedLibraryInterfaceWithModesExample.o"
+	@echo "... doc/examples/sharedLibraryInterfaceWithModesExample.i"
+	@echo "... doc/examples/sharedLibraryInterfaceWithModesExample.s"
 	@echo "... src/ale_interface.o"
 	@echo "... src/ale_interface.i"
 	@echo "... src/ale_interface.s"

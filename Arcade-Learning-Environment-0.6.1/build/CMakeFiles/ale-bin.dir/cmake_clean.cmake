@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale"
-  "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale.pdb"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale"
+  "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale.pdb"
   "CMakeFiles/ale-bin.dir/link.d"
   "CMakeFiles/ale-bin.dir/src/ale_interface.cpp.o"
   "CMakeFiles/ale-bin.dir/src/ale_interface.cpp.o.d"

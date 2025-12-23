@@ -1,4 +1,4 @@
-# Install script for directory: /home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1
+# Install script for directory: /home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,10 +52,10 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   file(INSTALL DESTINATION "/usr/local/include/ale/os_dependent" TYPE FILE FILES
-    "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/os_dependent/SettingsUNIX.hxx"
-    "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/os_dependent/SettingsWin32.hxx"
-    "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/os_dependent/OSystemUNIX.hxx"
-    "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/os_dependent/OSystemWin32.hxx"
+    "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/os_dependent/SettingsUNIX.hxx"
+    "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/os_dependent/SettingsWin32.hxx"
+    "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/os_dependent/OSystemUNIX.hxx"
+    "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/os_dependent/OSystemWin32.hxx"
     )
 endif()
 
@@ -68,7 +68,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/ale_interface.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/ale_interface.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -80,7 +80,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/Constants.h")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/Constants.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -92,7 +92,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/display_screen.h")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/display_screen.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -104,7 +104,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/misc_tools.h")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/misc_tools.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -116,7 +116,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/Array.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/Array.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -128,7 +128,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/ColourPalette.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/ColourPalette.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -140,7 +140,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/Log.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/Log.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -152,7 +152,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/Palettes.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/Palettes.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -164,7 +164,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/ScreenExporter.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/ScreenExporter.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -176,7 +176,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/SoundExporter.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/SoundExporter.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -188,7 +188,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/SoundNull.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/SoundNull.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -200,7 +200,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/SoundSDL.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/SoundSDL.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -212,7 +212,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/Version.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/Version.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -224,7 +224,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/common/VideoModeList.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/common" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/common/VideoModeList.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -236,7 +236,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/controllers/ale_controller.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/controllers/ale_controller.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -248,7 +248,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/controllers/fifo_controller.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/controllers/fifo_controller.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -260,7 +260,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/controllers/rlglue_controller.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/controllers" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/controllers/rlglue_controller.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -272,7 +272,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/AtariVox.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/AtariVox.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -284,7 +284,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Booster.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Booster.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -296,7 +296,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -308,7 +308,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart0840.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart0840.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -320,7 +320,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart2K.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart2K.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -332,7 +332,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart3E.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart3E.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -344,7 +344,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart3F.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart3F.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -356,7 +356,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart4A50.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart4A50.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -368,7 +368,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Cart4K.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Cart4K.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -380,7 +380,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartAR.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartAR.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -392,7 +392,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartCV.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartCV.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -404,7 +404,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartDPC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartDPC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -416,7 +416,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartE0.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartE0.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -428,7 +428,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartE7.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartE7.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -440,7 +440,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF4.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF4.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -452,7 +452,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF4SC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF4SC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -464,7 +464,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF6.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF6.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -476,7 +476,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF6SC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF6SC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -488,7 +488,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF8.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF8.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -500,7 +500,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartF8SC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartF8SC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -512,7 +512,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartFASC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartFASC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -524,7 +524,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartFE.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartFE.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -536,7 +536,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartMB.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartMB.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -548,7 +548,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartMC.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartMC.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -560,7 +560,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/CartUA.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/CartUA.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -572,7 +572,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Console.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Console.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -584,7 +584,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Control.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Control.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -596,7 +596,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/DefProps.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/DefProps.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -608,7 +608,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Deserializer.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Deserializer.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -620,7 +620,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Driving.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Driving.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -632,7 +632,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Event.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Event.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -644,7 +644,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/FSNode.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/FSNode.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -656,7 +656,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Joystick.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Joystick.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -668,7 +668,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Keyboard.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Keyboard.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -680,7 +680,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/M6532.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/M6532.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -692,7 +692,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/MD5.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/MD5.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -704,7 +704,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/MediaSrc.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/MediaSrc.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -716,7 +716,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/OSystem.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/OSystem.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -728,7 +728,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Paddles.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Paddles.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -740,7 +740,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Props.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Props.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -752,7 +752,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/PropsSet.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/PropsSet.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -764,7 +764,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Random.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Random.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -776,7 +776,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Serializer.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Serializer.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -788,7 +788,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Settings.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Settings.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -800,7 +800,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Sound.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Sound.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -812,7 +812,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/SpeakJet.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/SpeakJet.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -824,7 +824,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/Switches.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/Switches.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -836,7 +836,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/TIA.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/TIA.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -848,7 +848,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/TIASnd.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/TIASnd.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -860,7 +860,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/Device.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/Device.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -872,7 +872,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -884,7 +884,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502Hi.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502Hi.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -896,7 +896,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502Low.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/M6502Low.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -908,7 +908,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/NullDev.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/NullDev.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -920,7 +920,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/System.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/System.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -932,7 +932,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src/bspf/src" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/bspf/src/bspf.hxx")
+  file(INSTALL DESTINATION "/usr/local/include/ale/emucore/m6502/src/bspf/src" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/emucore/m6502/src/bspf/src/bspf.hxx")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -944,7 +944,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/ale_ram.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/ale_ram.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -956,7 +956,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/ale_screen.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/ale_screen.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -968,7 +968,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/ale_state.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/ale_state.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -980,7 +980,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/phosphor_blend.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/phosphor_blend.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -992,7 +992,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/stella_environment.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/stella_environment.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1004,7 +1004,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/environment/stella_environment_wrapper.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/environment" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/environment/stella_environment_wrapper.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1016,7 +1016,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/RomSettings.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/RomSettings.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1028,7 +1028,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/RomUtils.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/RomUtils.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1040,7 +1040,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/Roms.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/Roms.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1052,7 +1052,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Adventure.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Adventure.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1064,7 +1064,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/AirRaid.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/AirRaid.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1076,7 +1076,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Alien.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Alien.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1088,7 +1088,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Amidar.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Amidar.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1100,7 +1100,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Assault.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Assault.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1112,7 +1112,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Asterix.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Asterix.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1124,7 +1124,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Asteroids.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Asteroids.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1136,7 +1136,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Atlantis.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Atlantis.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1148,7 +1148,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/BankHeist.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/BankHeist.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1160,7 +1160,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/BattleZone.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/BattleZone.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1172,7 +1172,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/BeamRider.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/BeamRider.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1184,7 +1184,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Berzerk.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Berzerk.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1196,7 +1196,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Bowling.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Bowling.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1208,7 +1208,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Boxing.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Boxing.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1220,7 +1220,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Breakout.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Breakout.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1232,7 +1232,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Carnival.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Carnival.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1244,7 +1244,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Centipede.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Centipede.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1256,7 +1256,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/ChopperCommand.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/ChopperCommand.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1268,7 +1268,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/CrazyClimber.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/CrazyClimber.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1280,7 +1280,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Defender.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Defender.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1292,7 +1292,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/DemonAttack.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/DemonAttack.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1304,7 +1304,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/DonkeyKong.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/DonkeyKong.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1316,7 +1316,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/DoubleDunk.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/DoubleDunk.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1328,7 +1328,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/ElevatorAction.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/ElevatorAction.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1340,7 +1340,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Enduro.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Enduro.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1352,7 +1352,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/FishingDerby.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/FishingDerby.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1364,7 +1364,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Freeway.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Freeway.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1376,7 +1376,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Frogger.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Frogger.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1388,7 +1388,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Frostbite.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Frostbite.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1400,7 +1400,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Galaxian.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Galaxian.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1412,7 +1412,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Gopher.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Gopher.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1424,7 +1424,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Gravitar.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Gravitar.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1436,7 +1436,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Hero.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Hero.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1448,7 +1448,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/IceHockey.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/IceHockey.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1460,7 +1460,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/JamesBond.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/JamesBond.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1472,7 +1472,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/JourneyEscape.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/JourneyEscape.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1484,7 +1484,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Kaboom.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Kaboom.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1496,7 +1496,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Kangaroo.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Kangaroo.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1508,7 +1508,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/KeystoneKapers.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/KeystoneKapers.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1520,7 +1520,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Kingkong.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Kingkong.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1532,7 +1532,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Koolaid.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Koolaid.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1544,7 +1544,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Krull.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Krull.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1556,7 +1556,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/KungFuMaster.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/KungFuMaster.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1568,7 +1568,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/LaserGates.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/LaserGates.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1580,7 +1580,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/LostLuggage.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/LostLuggage.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1592,7 +1592,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/MontezumaRevenge.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/MontezumaRevenge.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1604,7 +1604,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/MrDo.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/MrDo.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1616,7 +1616,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/MsPacman.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/MsPacman.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1628,7 +1628,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/NameThisGame.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/NameThisGame.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1640,7 +1640,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Phoenix.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Phoenix.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1652,7 +1652,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Pitfall.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Pitfall.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1664,7 +1664,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Pong.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Pong.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1676,7 +1676,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Pooyan.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Pooyan.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1688,7 +1688,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/PrivateEye.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/PrivateEye.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1700,7 +1700,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/QBert.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/QBert.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1712,7 +1712,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/RiverRaid.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/RiverRaid.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1724,7 +1724,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/RoadRunner.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/RoadRunner.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1736,7 +1736,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/RoboTank.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/RoboTank.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1748,7 +1748,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Seaquest.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Seaquest.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1760,7 +1760,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/SirLancelot.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/SirLancelot.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1772,7 +1772,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Skiing.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Skiing.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1784,7 +1784,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Solaris.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Solaris.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1796,7 +1796,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/SpaceInvaders.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/SpaceInvaders.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1808,7 +1808,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/StarGunner.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/StarGunner.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1820,7 +1820,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Tennis.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Tennis.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1832,7 +1832,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Tetris.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Tetris.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1844,7 +1844,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/TimePilot.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/TimePilot.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1856,7 +1856,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Trondead.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Trondead.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1868,7 +1868,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Turmoil.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Turmoil.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1880,7 +1880,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Tutankham.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Tutankham.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1892,7 +1892,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/UpNDown.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/UpNDown.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1904,7 +1904,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Venture.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Venture.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1916,7 +1916,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/VideoPinball.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/VideoPinball.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1928,7 +1928,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/WizardOfWor.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/WizardOfWor.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1940,7 +1940,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/YarsRevenge.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/YarsRevenge.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1952,7 +1952,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/games/supported/Zaxxon.hpp")
+  file(INSTALL DESTINATION "/usr/local/include/ale/games/supported" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/games/supported/Zaxxon.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1964,7 +1964,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/ale/external/TinyMT" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/src/external/TinyMT/tinymt32.h")
+  file(INSTALL DESTINATION "/usr/local/include/ale/external/TinyMT" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/src/external/TinyMT/tinymt32.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1976,7 +1976,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/ale.pc")
+  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/ale.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -1994,7 +1994,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/libale.so")
+  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/libale.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libale.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libale.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -2007,7 +2007,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-lib.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-lib.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -2017,7 +2017,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ale"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ale" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ale")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -2027,7 +2027,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-bin.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-bin.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -2045,7 +2045,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.so")
+  file(INSTALL DESTINATION "/usr/local/lib" TYPE SHARED_LIBRARY FILES "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/ale_python_interface/libale_c.so")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libale_c.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libale_c.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -2058,13 +2058,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-c-lib.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
+  include("/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/CMakeFiles/ale-c-lib.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/install_local_manifest.txt"
+  file(WRITE "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -2080,6 +2080,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/cpc/Escritorio/ML-ASSAULT/Arcade-Learning-Environment-0.6.1/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/cpc/Escritorio/P2/Arcade-Learning-Environment-0.6.1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
