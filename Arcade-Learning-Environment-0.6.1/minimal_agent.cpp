@@ -6,9 +6,14 @@
 #include <ctime>
 #include <fstream>
 
+#include "weights_assault.hpp"
+
 
 // Constants
 constexpr uint32_t maxSteps = 7500;
+
+static const bool BOT_MODE = true;   // true = bot, false = teclado humano
+
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Get info from RAM
@@ -20,6 +25,24 @@ int32_t getPlayerX(ALEInterface& alei) {
 int32_t getBallX(ALEInterface& alei) {
    return alei.getRAM().get(99) + ((rand() % 3) - 1);
 }
+
+///////////////////////////////////////////////////////////////////////////////
+/// Calcular el score (s = w*x + b)
+///////////////////////////////////////////////////////////////////////////////
+static inline float score128(const float* w, ALEInterface& alei) {
+    float s = w[128];                  // bias
+    auto &ram = alei.getRAM();
+    for (int j = 0; j < 128; ++j) {
+        float x = float(ram.get(j)) / 255.0f;   // MISMA normalización que en Python
+        s += w[j] * x;
+    }
+    return s;
+}
+
+static inline int predict128(const float* w,  ALEInterface& alei) {
+    return (score128(w, alei) >= 0.0f) ? 1 : 0;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////
 /// Do Next Agent Step
@@ -51,11 +74,45 @@ reward_t agentStep(ALEInterface& alei, Action& chosenAction) {
     static int32_t lives { alei.lives() };
     static int fireHold = 0;
 
+    // Si perdemos una vida, pulsamos FIRE para reanudar
     if (alei.lives() < lives) {
         lives = alei.lives();
         alei.act(PLAYER_A_FIRE);
     }
 
+    Action a = PLAYER_A_NOOP;
+
+    if (BOT_MODE) {
+        // --- MODO BOT: 3 perceptrones (LEFT / RIGHT / FIRE) ---
+        float sL = score128(wLEFT,  alei);
+        float sR = score128(wRIGHT, alei);
+        float sF = score128(wFIRE,  alei);
+
+        bool left  = (sL >= 0.0f);
+        bool right = (sR >= 0.0f);
+        bool fire  = (sF >= 0.0f);
+
+        // Resolver conflicto LEFT y RIGHT si ambos “1”
+        if (left && right) {
+            if (sL >= sR) right = false;
+            else          left  = false;
+        }
+
+        if (fire) {
+            if (left)       a = PLAYER_A_LEFTFIRE;
+            else if (right) a = PLAYER_A_RIGHTFIRE;
+            else            a = PLAYER_A_UPFIRE;  // disparo vertical quieto
+        } else {
+            if (left)       a = PLAYER_A_LEFT;
+            else if (right) a = PLAYER_A_RIGHT;
+            else            a = PLAYER_A_NOOP;
+        }
+
+        chosenAction = a;
+        return alei.act(a);
+    }
+
+    // --- MODO HUMANO  ---
     SDL_PumpEvents();
     int nkeys = 0;
     Uint8* kb = SDL_GetKeyState(&nkeys);
@@ -68,15 +125,11 @@ reward_t agentStep(ALEInterface& alei, Action& chosenAction) {
     if (fireHold > 0) --fireHold;
     bool wantFire = fire || (fireHold > 0);
 
-    Action a = PLAYER_A_NOOP;
-
     if (wantFire) {
-        // Disparo (sin movimiento)
         if (left)       a = PLAYER_A_LEFTFIRE;
         else if (right) a = PLAYER_A_RIGHTFIRE;
-        else            a = PLAYER_A_UPFIRE;   // vertical quieto
+        else            a = PLAYER_A_UPFIRE;
     } else {
-        // Movimiento (solo si NO estamos disparando)
         if (left)       a = PLAYER_A_LEFT;
         else if (right) a = PLAYER_A_RIGHT;
         else            a = PLAYER_A_NOOP;
@@ -97,6 +150,9 @@ void usage(char const* pname) {
       << "   " << pname << " <romfile>\n";
    exit(-1);
 }
+
+
+
 
 ///////////////////////////////////////////////////////////////////////////////
 /// MAIN PROGRAM
