@@ -55,6 +55,13 @@ void printV(std::vector<std::string> v) {
 	std::cout << "\n";
 }
 
+void showStats(std::vector<Node> v, int lines) {
+	std::cout  << lines << " lines\n";
+	for (unsigned i = 0; i < v.size(); i++) {
+		std::cout << "Ram[" << v[i].cell << "]: " << v[i].heat << "\t\t" << ((float)v[i].heat/(float)lines) * 100.0 << "%\n";
+	}
+}
+
 int main(int argc, char *argv[]) {
 	std::fstream file;
 	std::vector<std::string> actions;
@@ -62,11 +69,13 @@ int main(int argc, char *argv[]) {
 	std::vector<int> heatmap_left(128, 0);
 	std::vector<int> heatmap_right(128, 0);
 	std::vector<int> heatmap_upfire(128, 0);
+	std::vector<int> heatmap_noop(128, 0);
 	file.open("assault_run2.csv", std::ios::in);
-	unsigned left_lines, right_lines, upfire_lines, lines;
-	left_lines = right_lines = upfire_lines = lines = 0;
+	unsigned left_lines, right_lines, upfire_lines, lines, noop_lines;
+	left_lines = right_lines = upfire_lines = lines = noop_lines = 0;
 	if (file.is_open()) {
 		std::vector<int> initial_ram(128, 0);
+		std::vector<int> last_ram(128,0);
 		std::string line, word, temp;
 		//Cogemos la cabecera del fichero
 		getline(file, line);
@@ -76,20 +85,20 @@ int main(int argc, char *argv[]) {
 		std::stringstream s(line);
 		int contador = 0, iram = 0;
 		while (getline(s, word, ',')) {
-
 			if (contador >= 3) {
 				iram = stoi(word);
 				initial_ram[contador-3] = iram;	
 			}
 			contador++;
 		}
+
 		//Ahora comparamos los valores del resto de las lineas
 		while (file >> temp) {
 			getline(file, line);
 			std::stringstream ss(temp);
 			contador = iram = 0;
-			bool left, right, upfire;
-			left = right = upfire = false;
+			bool left, right, upfire, noop;
+			left = right = noop = upfire = false;
 			lines++;
 			while (getline(ss, word, ',')) {
 				if (contador == 1) {
@@ -113,10 +122,15 @@ int main(int argc, char *argv[]) {
 					}else if (word == "10"){
 						upfire = true;
 						upfire_lines++;
+					}else if (word == "0") {
+						noop = true;
+						noop_lines++;
 					}
 				}
+
 				if (contador >= 3) {
 					iram = stoi(word);
+					/*
 					if (iram != initial_ram[contador-3]){
 						heatmap[contador-3]++;
 						if (right)
@@ -124,11 +138,29 @@ int main(int argc, char *argv[]) {
 						else if (left)
 							heatmap_left[contador - 3]++;
 						else if (upfire)
-							heatmap_upfire[contador-3]++;
+							heatmap_upfire[contador - 3]++;
+						else if (noop)
+							heatmap_noop[contador - 3]++;
 					}
+					*/
+					last_ram[contador-3] = iram;
 				}
 				contador++;
 			}
+			for (unsigned i = 0; i < initial_ram.size(); i++) {
+				if (last_ram[i] != initial_ram[i]){
+					heatmap[i]++;
+					if (right)
+						heatmap_right[i]++;
+					else if (left)
+						heatmap_left[i]++;
+					else if (upfire)
+						heatmap_upfire[i]++;
+					else if (noop)
+						heatmap_noop[i]++;
+				}
+			}
+			initial_ram = last_ram;
 		}
 		file.close();
 	} else {
@@ -138,6 +170,8 @@ int main(int argc, char *argv[]) {
 	std::vector<Node> v_left(128, Node());
 	std::vector<Node> v_right(128, Node());
 	std::vector<Node> v_upfire(128, Node());
+	std::vector<Node> v_noop(128, Node());
+	
 	for (unsigned i = 0; i < 128; i++) {
 		Node n(i,heatmap[i]);
 		v[i] = n;
@@ -147,25 +181,22 @@ int main(int argc, char *argv[]) {
 		v_right[i] = n_right;
 		Node n_upfire(i,heatmap_upfire[i]);
 		v_upfire[i] = n_upfire;
+		Node n_noop(i, heatmap_noop[i]);
+		v_noop[i] = n_noop;
 	}
 	bubbleSort(v);
 	bubbleSort(v_left);
 	bubbleSort(v_right);
 	bubbleSort(v_upfire);
-	std::cout << "General\n" << lines << " lines\n";
-	for (unsigned i = 0; i < v.size(); i++) {
-		std::cout << "Ram[" << v[i].cell << "]: " << v[i].heat << "\t\t" << ((float)v[i].heat/(float)lines) * 100.0 << "%\n";
-	}
-	std::cout << "Izquierda\n" << left_lines << " lines\n";
-	for (unsigned i = 0; i < v_left.size(); i++) {
-		std::cout << "Ram[" << v_left[i].cell << "]: " << v_left[i].heat << "\t\t" << ((float)v_left[i].heat/(float)left_lines) * 100.0 << "%\n";
-	}
-	std::cout << "Derecha\n" << right_lines << " lines\n" ;
-	for (unsigned i = 0; i < v_right.size(); i++) {
-		std::cout << "Ram[" << v_right[i].cell << "]: " << v_right[i].heat << "\t\t" << ((float)v_right[i].heat/(float)right_lines) * 100.0 << "%\n";
-	}
-	std::cout << "Up fire\n" << upfire_lines << " lines\n";
-	for (unsigned i = 0; i < v_upfire.size(); i++) {
-		std::cout << "Ram[" << v_upfire[i].cell << "]: " << v_upfire[i].heat << "\t\t" << ((float)v_upfire[i].heat/(float)upfire_lines) * 100.0 << "%\n";
-	}
+	bubbleSort(v_noop);
+	std::cout << "General\n";
+	showStats(v,lines);
+	std::cout << "Izquierda\n";
+	showStats(v_left,left_lines);
+	std::cout << "Derecha\n";
+	showStats(v_right, right_lines);
+	std::cout << "Up fire\n";
+	showStats(v_upfire, upfire_lines);
+	std::cout << "Noop\n";
+	showStats(v_noop, noop_lines);
 }

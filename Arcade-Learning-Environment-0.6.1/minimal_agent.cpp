@@ -12,7 +12,7 @@
 // Constants
 constexpr uint32_t maxSteps = 7500;
 
-static const bool BOT_MODE = true;   // true = bot, false = teclado humano
+static const bool BOT_MODE = false;   // true = bot, false = teclado humano
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -174,6 +174,7 @@ int main(int argc, char **argv) {
 
    std::ofstream csv;
    bool recording = (argc == 3);
+   recording = false;
    if (recording) {
       csv.open(argv[2]);
       if (!csv) {
@@ -205,7 +206,8 @@ int main(int argc, char **argv) {
             for (int i = 0; i < 128; ++i) csv << "," << int(ram.get(i));
             csv << "\n";
          }
-
+         auto &ram = alei.getRAM();
+         std::cout << int(ram.get(123)) << "\n";
          ++step;
       }
 
