@@ -4,13 +4,13 @@
 
 #include <iostream>
 #include <vector>
+#include <cmath>
 using namespace std;
 
+class Neurona
+{
 
-
-
-class Neurona{
-
+public:
     // como es una red que deberia ser dinamica voy a poner vector de pesos que puedan cambiar
     // para mantener el orden, si la neurona no es apuntada por la neurona correspondiente en orden, le ponemos 0
     // tamaño del vector de pesos sera el tamaño (numero de neuronas) de la capaa anterior
@@ -18,45 +18,233 @@ class Neurona{
 
     double bias;
 
+    double salida;   // salida de la neurona
+    double delta_bp; // delta del backpropagation que es el error
+
     // la salida de la neurona no seria necesario ponerla creo porque seria la entrada de la siguiente capa, o sea que si es la ultima capa, esa ya tiene una entrada y ninguna salida.
 
-public:
-    Neurona(size_t tam_capa_anterior)
-        : pesos(tam_capa_anterior, 0.0), bias(0.0) {}
+    Neurona(size_t tam_capa_anterior) : pesos(tam_capa_anterior, 0.0), bias(0.0), salida(0.0), delta_bp(0.0)
+    {
+
+        // partimos de que los pesos de una red se inicializan de forma aleatoria
+
+        bias = (((double)rand()) / RAND_MAX) - 0.5;
+
+        for (double &peso : pesos)
+        {
+            peso = (((double)rand()) / RAND_MAX) - 0.5;
+        }
+    }
 };
 
-
-class Capa{
-
-    vector<Neurona> neuronas;
+class Capa
+{
 
 public:
+    vector<Neurona> neuronas;
     // CONSTRUCTOR BASICO
-    Capa(size_t num_neuronas, size_t tam_capa_anterior){
-    
-        for(size_t i = 0; i < num_neuronas; ++i){
-            
-            
+    Capa(size_t num_neuronas, size_t tam_capa_anterior)
+    {
+
+        for (size_t i = 0; i < num_neuronas; ++i)
+        {
+
             neuronas.emplace_back(tam_capa_anterior);
         }
     }
 };
 
-
-class Red{
-
+class RedBackPropagation
+{
+public:
     vector<Capa> capas;
 
-public:
-    Red(const vector<size_t>& arquitectura){
-        
-        
-        for(size_t i = 1; i < arquitectura.size(); ++i){
-        
-        
+    double tasa_aprendizaje = 0.1; // es lo que dimos en DP, lo vamos a ir ajustando
+
+    // FUNC SIGMOIDEA Y LA DERIVADA
+
+    double sigmoid(double n)
+    {
+        double resultado = 1.0 / (1.0 + (exp(n * -1)));
+
+        return resultado;
+    }
+
+    double sigmoid_derivada(double n)
+    {
+        double resultado = n / (1.0 - n);
+
+        return resultado;
+    }
+
+    // es cantidad de capas
+    // o sea que si tenemos {2, 4, 3}
+    // tenemos 2 capas de entrada
+    // 4 capas ocultas
+
+    // 3 salidas (acciones: moverse a izquierda/ moverse a la derecha / atacar DEL PERSONAJE
+
+    RedBackPropagation(const vector<size_t> &arquitectura)
+    {
+
+        for (size_t i = 1; i < arquitectura.size(); ++i)
+        {
+            // LA ENTRADA NO PORQUE LAS CAPS ENTRADA SOLO TIENEN DATOS NO NEURONAS PREVIAS
             capas.emplace_back(arquitectura[i], arquitectura[i - 1]);
+        }
+    }
+
+    // hacia delante
+
+    vector<double> forward(const vector<double> &entrada)
+    {
+
+        // LAS ACTIVACIONES INICIALES : VECTOR DE ESTADOS DEL JUEGO o sea todo lo recaudado QUE COMO NO SABEMOS cuantas tendremos por ahora, lo deje en tamaño variable
+        vector<double> activaciones = entrada;
+
+        for (auto &capa : capas)
+        {
+            // VALORES QUE SALEN DE CADA CAPA
+            vector<double> nuevas_activaciones;
+
+            // por cada neurona de la capa en la que estamos,
+            for (auto &neurona : capa.neuronas)
+            {
+
+                double suma = neurona.bias;
+
+                // NUESTRO CONJUNTO DE DATS
+                for (size_t i = 0; i < activaciones.size(); i++)
+                {
+
+                    suma += neurona.pesos[i] * activaciones[i];
+                }
+
+                neurona.salida = sigmoid(suma);
+
+                nuevas_activaciones.push_back(neurona.salida);
+            }
+
+            activaciones = nuevas_activaciones;
+        }
+
+        return activaciones;
+    }
+
+    void backpropagation(const vector<double> &entrada, const vector<double> objetivo)
+    {
+
+        Capa &capa_salida = capas.back(); // salida.neuronas.size() ES EL TAMAÑO DE LA CAPA
+
+        for (size_t i = 0; i < capa_salida.neuronas.size(); i++)
+        {
+
+            double c_salida_output = capa_salida.neuronas[i].salida;
+
+            capa_salida.neuronas[i].delta_bp = (c_salida_output - objetivo[i]) * sigmoid_derivada(c_salida_output);
+        }
+
+        // VOY HACIA ATRAS EN LAS CAPAS:
+
+        for (int j = capas.size() - 2; j >= 0; j--)
+        {
+
+            for (size_t i = 0; i < capas[j].neuronas.size(); i++)
+            {
+
+                double suma = 0.0;
+
+                // es la capa siguiente, la mas cercna a la salida
+                for (auto &neurona_siguiente : capas[j + 1].neuronas)
+                {
+
+                    suma += neurona_siguiente.pesos[i] * neurona_siguiente.delta_bp;
+
+                }
+
+                double capasnuevas_salidas = capas[i].neuronas[i].salida;
+
+                capas[i].neuronas[i].delta_bp = suma * sigmoid_derivada(capasnuevas_salidas);
+
+
+            }
+        }
+
+
+
+
+
+        // ACTUALIZO PESOS
+
+
+        vector <double> activaciones_previas = entrada;
+
+        for (auto &capa : capas){
+
+            for(auto & neurona : capa.neuronas){
+
+                for(size_t i = 0; i < neurona.pesos.size(); i++){
+                    
+                    neurona.pesos[i] = neurona.delta_bp * tasa_aprendizaje * activaciones_previas[i];
+                }
+
+                // ESTIY EN NEURONA AHORA
+
+                neurona.bias -= tasa_aprendizaje * neurona.delta_bp;
+
+
+            }
+
+
+            // limpio el vector de activaciones previas
+
+            for(auto &activacion : activaciones_previas){
+                activacion = 0.0;
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    // EL ENTRENAMIENTO SE HACE CON TODO Y LA ULTIMA CAPA ES LA QUE DICE LO QUE SE HACE, PERO HAY QUE DARLE TODO PARA ENTRENARLA (activaciones)
+    // EL PREDICTOR DIRA EN BASE AL MOVIMIENTO DEL ENEMIGO, LO QUE EL JUGADOR DEBE HACER
+    // como la estructura sera asi 
+    /*
+        
+        {
+            [3, 4, 5, ...., 5],
+            [3, 4, 5, ...., 5],
+            [3, 4, 5, ...., 5]
         
         }
+    
+    y aun no sabemos los datos que vamos a incluir si o si, voy a hacer los dos vectores dinamicos
+    
+    */
+
+    // EL CONJUNTO DE APRENDIZAJE TIENE INPUT Y OUTPUT: input es el movimiento del enemigo y output el movimiento del jugador PERO AMBOS SON EL 'INPUT' PARA ENTRENAR LA RED
+    // para el preductor, la idea es que el input sea datos del enemigo y output sea datos del personaje
+
+    void entrenar(const vector<vector<double>> datos_enemigo, const vector<vector<double>> datos_personaje, int epocas){
+
+        for (int i = 0; i < epocas; i++){
+
+            // va a haber la misma cantidad de samples de datos enemigo y de jugador porque por cada ACCION DE ENEMIGO HAY UNA REACCION DE JUGADOR
+            for(size_t i = 0; i < datos_enemigo.size(); i++){
+
+                forward(datos_enemigo[i]);
+                backpropagation(datos_enemigo[i], datos_personaje[i]);
+            }
+        }
+
     }
 };
 
