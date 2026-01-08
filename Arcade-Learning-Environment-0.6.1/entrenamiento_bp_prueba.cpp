@@ -19,11 +19,11 @@ int main()
 
 
     // que responda a una funcion a ver si capta el patron
-    for (auto &v : personaje)
+    for (auto &v : enemigo)
     {
         double y1 = (v[0] + v[1]) / 2.0;
         double y2 = (v[0] - v[1] + 1.0) / 2.0; 
-        enemigo.push_back({y1, y2});
+        personaje.push_back({y1, y2});
     }
 
 
@@ -36,7 +36,7 @@ int main()
     vector<double> test_enemigo = {0.6, 0.2};
     vector<double> prediccion_personaje = red.forward(test_enemigo);
 
-    
+
     cout << "ENTRADA VALORES DE ENEMIGO: " << test_enemigo[0] << ", " << test_enemigo[1];
     
 

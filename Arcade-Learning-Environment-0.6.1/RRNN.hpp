@@ -72,7 +72,7 @@ public:
 
     double sigmoid_derivada(double n)
     {
-        double resultado = n / (1.0 - n);
+        double resultado = n * (1.0 - n);
 
         return resultado;
     }
@@ -162,9 +162,9 @@ public:
 
                 }
 
-                double capasnuevas_salidas = capas[i].neuronas[i].salida;
+                double capasnuevas_salidas = capas[j].neuronas[i].salida;
 
-                capas[i].neuronas[i].delta_bp = suma * sigmoid_derivada(capasnuevas_salidas);
+                capas[j].neuronas[i].delta_bp = suma * sigmoid_derivada(capasnuevas_salidas);
 
 
             }
@@ -185,7 +185,8 @@ public:
 
                 for(size_t i = 0; i < neurona.pesos.size(); i++){
                     
-                    neurona.pesos[i] = neurona.delta_bp * tasa_aprendizaje * activaciones_previas[i];
+                    // GRADIENTE DESCENDENTE
+                    neurona.pesos[i] -= neurona.delta_bp * tasa_aprendizaje * activaciones_previas[i];
                 }
 
                 // ESTIY EN NEURONA AHORA
@@ -198,8 +199,10 @@ public:
 
             // limpio el vector de activaciones previas
 
-            for(auto &activacion : activaciones_previas){
-                activacion = 0.0;
+            activaciones_previas.clear();
+            for (auto &n : capa.neuronas){
+             
+                activaciones_previas.push_back(n.salida);
             }
         }
     }
