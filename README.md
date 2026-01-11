@@ -16,11 +16,11 @@ Ejecutar y jugar GRABANDO DATASET : <br>
 
 
 Controles : 
-        flecha izq -> mover izq
-        flecha der -> mover der
-        espacio -> disparo vertical
-        izq + espacio -> disparo izq
-        der + espacio -> disparo der
+* flecha izq -> mover izq
+* flecha der -> mover der
+* espacio -> disparo vertical
+* izq + espacio -> disparo izq
+* der + espacio -> disparo der
 
 
 Tras jugar y guardar datos, podemos consultar datos del CSV así: 
