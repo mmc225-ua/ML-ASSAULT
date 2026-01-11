@@ -10,7 +10,7 @@
 
 
 // Constants
-constexpr uint32_t maxSteps = 7500;
+constexpr uint32_t maxSteps = 10000000;
 
 static const bool BOT_MODE = false;   // true = bot, false = teclado humano
 
@@ -207,7 +207,7 @@ int main(int argc, char **argv) {
             csv << "\n";
          }
          auto &ram = alei.getRAM();
-         std::cout << int(ram.get(123)) << "\n";
+         std::cout << int(ram.get(73)) << "\n";
          ++step;
       }
 
