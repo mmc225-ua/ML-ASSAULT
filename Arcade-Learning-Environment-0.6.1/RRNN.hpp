@@ -161,7 +161,24 @@ public:
             activaciones = nuevas_activaciones;
 
             num_capa++;
+
+
+
+
+
+            bool es_salida = (&capa == &capas.back());
+            if (es_salida){
+
+                cout << "ESTO ES LA SALIDA " << endl;
+                for (int i = 0; i < nuevas_activaciones.size(); i++){
+                    cout << nuevas_activaciones[i] << ",";
+                }
+                cout << endl << "SALIDA - OBJETIVO ES EL ERROR, objetivo es SUEÑO real" <<endl;
+            }
         }
+
+
+
 
         return activaciones;
     }
