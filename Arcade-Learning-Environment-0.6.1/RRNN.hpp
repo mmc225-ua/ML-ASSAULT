@@ -89,7 +89,9 @@ public:
 
         for (size_t i = 1; i < arquitectura.size(); ++i)
         {
-            // LA ENTRADA NO PORQUE LAS CAPS ENTRADA SOLO TIENEN DATOS NO NEURONAS PREVIAS
+            // la primera capa es de entrada y la última de salida
+
+            // TODO LO DEL MEDIO SON OCULTAS
             capas.emplace_back(arquitectura[i], arquitectura[i - 1]);
         }
     }
@@ -98,14 +100,22 @@ public:
 
     vector<double> forward(const vector<double> &entrada)
     {
+        cout << "en forward " << endl;
+
+        int num_capa = 0;
 
         // LAS ACTIVACIONES INICIALES : VECTOR DE ESTADOS DEL JUEGO o sea todo lo recaudado QUE COMO NO SABEMOS cuantas tendremos por ahora, lo deje en tamaño variable
         vector<double> activaciones = entrada;
 
         for (auto &capa : capas)
         {
+            
             // VALORES QUE SALEN DE CADA CAPA
             vector<double> nuevas_activaciones;
+
+
+
+            int num_neurona = 0;
 
             // por cada neurona de la capa en la que estamos,
             for (auto &neurona : capa.neuronas)
@@ -120,13 +130,30 @@ public:
                     suma += neurona.pesos[i] * activaciones[i];
                 }
 
-                neurona.salida = sigmoid(suma);
+                //neurona.salida = sigmoid(suma);
+
+                bool es_salida = (&capa == &capas.back());
+                neurona.salida = es_salida ? suma : sigmoid(suma);
+
 
                 nuevas_activaciones.push_back(neurona.salida);
+
+
+                
+
+                cout << "   num neurona " << num_neurona << endl;
+                num_neurona++;
             }
 
             activaciones = nuevas_activaciones;
+
+            cout << "CAPA " << num_capa << endl;
+            num_capa++;
         }
+
+
+
+        
 
         return activaciones;
     }
@@ -141,7 +168,7 @@ public:
 
             double c_salida_output = capa_salida.neuronas[i].salida;
 
-            capa_salida.neuronas[i].delta_bp = (c_salida_output - objetivo[i]) * sigmoid_derivada(c_salida_output);
+            capa_salida.neuronas[i].delta_bp = (c_salida_output - objetivo[i]); //* sigmoid_derivada(c_salida_output);
         }
 
         // VOY HACIA ATRAS EN LAS CAPAS:
@@ -236,6 +263,11 @@ public:
     // EL CONJUNTO DE APRENDIZAJE TIENE INPUT Y OUTPUT: input es el movimiento del enemigo y output el movimiento del jugador PERO AMBOS SON EL 'INPUT' PARA ENTRENAR LA RED
     // para el preductor, la idea es que el input sea datos del enemigo y output sea datos del personaje
 
+
+
+
+    // se suponr que 1 capa oculta es suficiente para los problemas de regresión
+    // en el print se ve 0 y 1 (capa de salida y oculta, la de entrada no es explicita)
     void entrenar(const vector<vector<double>> datos_enemigo, const vector<vector<double>> datos_personaje, int epocas){
 
         for (int i = 0; i < epocas; i++){

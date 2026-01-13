@@ -4,6 +4,7 @@
 #include <sstream> // Necesario para stringstream
 #include <string>
 #include <cstring>
+#include "RRNN.hpp"
 using namespace std;
 
 struct Persona
@@ -198,22 +199,124 @@ int main()
             
             
 
-            cout << per.edad << ", "
-                 << per.genero << ", "
-                 << per.plataforma << ", "
-                 << per.tiempo_pantalla << ", "
-                 << per.tiempo_sociales << ", "
-                 << per.positivas << ", "
-                 << per.negativas << ", "
-                 << per.horas_suenyo << ", "
-                 << per.actividad_fisica << ", "
-                 << per.ansiedad << ", "
-                 << per.estres << ", "
-                 << per.humor << ", "
-                 << per.estado << endl;
+        
             personas.push_back(per);
         }
     }
+
+    vector<vector<double>> input_personas;
+    vector<vector<double>> output_personas;
+    
+    // ahora hay que pasarlo todo a un vector de doubles porque hace calculos con los pesos de la red neuronal, que son doubles aleatorios
+
+
+
+
+    // SEPARACION POR INPUT Y OUTPUT 
+
+    // no es buena idea predecir el estado mental porque es stressed en la mayoria, por lo que aprendería a decir stressed y acertar
+    // ia el 90% de los casos
+
+
+    for(int i = 0; i < personas.size(); i++){
+
+        vector<double> p_d; // persona double
+        vector<double> o_d; // output
+
+        double edad = double(personas[i].edad);
+        double gen = double(personas[i].genero);
+        double plat = double(personas[i].plataforma);
+        double t_p = double(personas[i].tiempo_pantalla);
+        double t_s = double(personas[i].tiempo_sociales);
+        double pos = double(personas[i].positivas);
+        double neg = double(personas[i].negativas);
+        
+        double h_s = double(personas[i].horas_suenyo); // 1 de salida
+        
+        double a_fisi = double(personas[i].actividad_fisica);
+        double ans = double(personas[i].ansiedad);
+        double estres = double(personas[i].estres);
+        double humor = double(personas[i].humor);
+        double estado = double(personas[i].estado);
+
+        // 12  de entrada
+
+        p_d.push_back(edad/100);
+        p_d.push_back(gen/100);
+        p_d.push_back(plat/100);
+        p_d.push_back(t_p/100);
+        p_d.push_back(t_s/100);
+        p_d.push_back(pos/100);
+        p_d.push_back(neg/100);
+        
+        o_d.push_back(h_s/100);
+        
+        p_d.push_back(a_fisi/100);
+        p_d.push_back(ans/100);
+        p_d.push_back(estres/100);
+        p_d.push_back(humor/100);
+        //p_d.push_back(estado/100);
+
+        input_personas.push_back(p_d);
+
+        output_personas.push_back(o_d);
+    }
+
+    /* 
+    for (size_t i = 0; i < input_personas.size(); i++) {
+        cout << "Persona " << i << ": ";
+        for (size_t j = 0; j < input_personas[i].size(); j++) {
+            cout << input_personas[i][j];
+            if (j < input_personas[i].size() - 1)
+                cout << ", ";
+        }
+        cout << endl;
+    }
+
+    
+    for (size_t i = 0; i < output_personas.size(); i++) {
+        cout << "Persona " << i << ": ";
+        for (size_t j = 0; j < output_personas[i].size(); j++) {
+            cout << output_personas[i][j];
+            if (j < output_personas[i].size() - 1)
+                cout << ", ";
+        }
+        cout << endl;
+    }*/
+
+
+    // si probais con esto imprime 0,1,2 capas, la primera NO
+
+    RedBackPropagation red({11, 10, 10, 1});
+    red.tasa_aprendizaje = 0.1;
+    red.entrenar(input_personas, output_personas, 3);
+
+    vector<double> test_persona {
+    35.0/100.0,
+    1.0/100.0,
+    4.0/100.0,
+    320.0/100.0,
+    160.0/100.0,
+    1.0/100.0,
+    2.0/100.0,
+    28.0/100.0,
+    2.0/100.0,
+    7.0/100.0,
+    6.0/100.0,
+    
+    };
+
+    
+    vector<double> prediccion_suenyo = red.forward(test_persona);
+
+
+
+    cout << "ESTE ES UN EJEMPLO DE ENTRADA para ver que tal...." << endl;
+    cout << "Reyansh Ghosh,35,1/1/2024,Male,Instagram,320,160,1,2,7.4,28,2,7,6,Stressed" << endl;
+    cout << "DEBERIA DAR 7.4 aprox" << endl;
+    cout << prediccion_suenyo[0] * 100 << endl;
+
+
 
     return 0;
 }
