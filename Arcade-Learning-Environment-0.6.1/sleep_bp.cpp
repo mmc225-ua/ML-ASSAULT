@@ -287,7 +287,7 @@ int main()
 
     // si probais con esto imprime 0,1,2 capas, la primera NO
 
-    RedBackPropagation red({11, 10, 10, 1});
+    RedBackPropagation red({11, 20, 20, 20, 1});
     red.tasa_aprendizaje = 0.1;
     red.entrenar(input_personas, output_personas, 3);
 
@@ -305,6 +305,9 @@ int main()
     6.0/100.0,
     
     };
+
+
+    cout << endl << endl << endl << endl << ("aqui ES LA PREDICCION") << endl << endl << endl << endl << endl;
 
     
     vector<double> prediccion_suenyo = red.forward(test_persona);

@@ -89,9 +89,7 @@ public:
 
         for (size_t i = 1; i < arquitectura.size(); ++i)
         {
-            // la primera capa es de entrada y la última de salida
-
-            // TODO LO DEL MEDIO SON OCULTAS
+            // el tamaño de la capa de entrada de la neurona de capa n tiene tamaño de la capa anterior
             capas.emplace_back(arquitectura[i], arquitectura[i - 1]);
         }
     }
@@ -104,56 +102,66 @@ public:
 
         int num_capa = 0;
 
-        // LAS ACTIVACIONES INICIALES : VECTOR DE ESTADOS DEL JUEGO o sea todo lo recaudado QUE COMO NO SABEMOS cuantas tendremos por ahora, lo deje en tamaño variable
+        // esto son los 11 parametros de las personas
         vector<double> activaciones = entrada;
 
         for (auto &capa : capas)
         {
-            
+
             // VALORES QUE SALEN DE CADA CAPA
             vector<double> nuevas_activaciones;
 
-
-
+            cout << "CAPA " << num_capa << endl;
             int num_neurona = 0;
 
             // por cada neurona de la capa en la que estamos,
             for (auto &neurona : capa.neuronas)
             {
+                // suma ponderada de las entradas y el bias
 
+                // por cada neurona, SUMA es su bias y la multiplicacion de los valores de la entrada de la red * los pesos de su vector de entrada (o sea que la señala desde otras neuronas)
                 double suma = neurona.bias;
+                //cout << "   num neurona " << num_neurona << endl;
 
                 // NUESTRO CONJUNTO DE DATS
                 for (size_t i = 0; i < activaciones.size(); i++)
                 {
+                    // cout << "añadiendo " << neurona.pesos[i] << " * " << activaciones[i] << endl;
 
+                    // activaciones tiene el tamaño de la capa anterior
                     suma += neurona.pesos[i] * activaciones[i];
                 }
 
-                //neurona.salida = sigmoid(suma);
+                // neurona.salida = sigmoid(suma);
+                // cout << "       suma de la neurona " << suma << endl;
 
+                // SI ES LA CAPA DE SALIDA, me quedo son la suma como salida
+                // SI NO, SE VA A SIGMOID
                 bool es_salida = (&capa == &capas.back());
                 neurona.salida = es_salida ? suma : sigmoid(suma);
 
-
                 nuevas_activaciones.push_back(neurona.salida);
 
+                // si es una capa mas, pasa a ser el vector de entrada actualizao
 
-                
+                // no hay problema porque el vector es tamaño igual al tamaño de la capa
+                // salida de la capa es de tamaño de la capa
 
-                cout << "   num neurona " << num_neurona << endl;
                 num_neurona++;
             }
 
+            cout << "vector de entrada MODIFICADO por neuronas (deberia ser mismo largo que numero de neuronas de la capa)" << endl;
+            cout << "       [";
+            for (int i = 0; i < nuevas_activaciones.size(); i++)
+            {
+                cout << nuevas_activaciones[i] << ",";
+            }
+            cout << "]";
+
             activaciones = nuevas_activaciones;
 
-            cout << "CAPA " << num_capa << endl;
             num_capa++;
         }
-
-
-
-        
 
         return activaciones;
     }
@@ -186,32 +194,27 @@ public:
                 {
 
                     suma += neurona_siguiente.pesos[i] * neurona_siguiente.delta_bp;
-
                 }
 
                 double capasnuevas_salidas = capas[j].neuronas[i].salida;
 
                 capas[j].neuronas[i].delta_bp = suma * sigmoid_derivada(capasnuevas_salidas);
-
-
             }
         }
 
-
-
-
-
         // ACTUALIZO PESOS
 
+        vector<double> activaciones_previas = entrada;
 
-        vector <double> activaciones_previas = entrada;
+        for (auto &capa : capas)
+        {
 
-        for (auto &capa : capas){
+            for (auto &neurona : capa.neuronas)
+            {
 
-            for(auto & neurona : capa.neuronas){
+                for (size_t i = 0; i < neurona.pesos.size(); i++)
+                {
 
-                for(size_t i = 0; i < neurona.pesos.size(); i++){
-                    
                     // GRADIENTE DESCENDENTE
                     neurona.pesos[i] -= neurona.delta_bp * tasa_aprendizaje * activaciones_previas[i];
                 }
@@ -219,67 +222,54 @@ public:
                 // ESTIY EN NEURONA AHORA
 
                 neurona.bias -= tasa_aprendizaje * neurona.delta_bp;
-
-
             }
-
 
             // limpio el vector de activaciones previas
 
             activaciones_previas.clear();
-            for (auto &n : capa.neuronas){
-             
+            for (auto &n : capa.neuronas)
+            {
+
                 activaciones_previas.push_back(n.salida);
             }
         }
     }
 
-
-
-
-
-
-
-
-
-
-
     // EL ENTRENAMIENTO SE HACE CON TODO Y LA ULTIMA CAPA ES LA QUE DICE LO QUE SE HACE, PERO HAY QUE DARLE TODO PARA ENTRENARLA (activaciones)
     // EL PREDICTOR DIRA EN BASE AL MOVIMIENTO DEL ENEMIGO, LO QUE EL JUGADOR DEBE HACER
-    // como la estructura sera asi 
+    // como la estructura sera asi
     /*
-        
+
         {
             [3, 4, 5, ...., 5],
             [3, 4, 5, ...., 5],
             [3, 4, 5, ...., 5]
-        
+
         }
-    
+
     y aun no sabemos los datos que vamos a incluir si o si, voy a hacer los dos vectores dinamicos
-    
+
     */
 
     // EL CONJUNTO DE APRENDIZAJE TIENE INPUT Y OUTPUT: input es el movimiento del enemigo y output el movimiento del jugador PERO AMBOS SON EL 'INPUT' PARA ENTRENAR LA RED
     // para el preductor, la idea es que el input sea datos del enemigo y output sea datos del personaje
 
-
-
-
     // se suponr que 1 capa oculta es suficiente para los problemas de regresión
     // en el print se ve 0 y 1 (capa de salida y oculta, la de entrada no es explicita)
-    void entrenar(const vector<vector<double>> datos_enemigo, const vector<vector<double>> datos_personaje, int epocas){
+    void entrenar(const vector<vector<double>> datos_enemigo, const vector<vector<double>> datos_personaje, int epocas)
+    {
 
-        for (int i = 0; i < epocas; i++){
+        for (int i = 0; i < epocas; i++)
+        {
 
             // va a haber la misma cantidad de samples de datos enemigo y de jugador porque por cada ACCION DE ENEMIGO HAY UNA REACCION DE JUGADOR
-            for(size_t i = 0; i < datos_enemigo.size(); i++){
+            for (size_t i = 0; i < datos_enemigo.size(); i++)
+            {
 
                 forward(datos_enemigo[i]);
                 backpropagation(datos_enemigo[i], datos_personaje[i]);
             }
         }
-
     }
 };
 
