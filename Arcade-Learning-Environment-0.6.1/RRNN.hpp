@@ -280,18 +280,18 @@ public:
 
     // se suponr que 1 capa oculta es suficiente para los problemas de regresión
     // en el print se ve 0 y 1 (capa de salida y oculta, la de entrada no es explicita)
-    void entrenar(const vector<vector<double>> datos_enemigo, const vector<vector<double>> datos_personaje, int epocas)
+    void entrenar(const vector<vector<double>> input, const vector<vector<double>> output, int epocas)
     {
 
         for (int i = 0; i < epocas; i++)
         {
 
             // va a haber la misma cantidad de samples de datos enemigo y de jugador porque por cada ACCION DE ENEMIGO HAY UNA REACCION DE JUGADOR
-            for (size_t i = 0; i < datos_enemigo.size(); i++)
+            for (size_t i = 0; i < input.size(); i++)
             {
 
-                forward(datos_enemigo[i]);
-                backpropagation(datos_enemigo[i], datos_personaje[i]);
+                forward(input[i]);
+                backpropagation(input[i], output[i]);
             }
         }
     }

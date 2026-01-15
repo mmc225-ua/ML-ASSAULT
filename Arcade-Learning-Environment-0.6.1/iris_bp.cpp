@@ -5,6 +5,8 @@
 #include <string>
 #include <cstring>
 #include "RRNN.hpp"
+#include <algorithm>  // para desordenar el vector y que pueda entrenarse con todas las categorias al separar datos
+#include <random> 
 using namespace std;
 
 /*
@@ -134,21 +136,109 @@ int main()
     }
 
 
-    cout << "flores:";
+    random_device rd;
+    mt19937 gen(rd());
+    shuffle(flores.begin(), flores.end(), gen);
 
-    for (size_t i = 0; i < flores.size(); i++)
+
+
+    vector<vector<double>> flores_input;
+    vector<vector<double>> flores_output;
+
+    for(int i = 0; i < flores.size(); i++){
+
+        int numvalor = 0;
+        vector<double> input;
+        vector<double> output;
+        for(int j = 0; j < flores[i].size(); j++){
+
+            if (numvalor == 0 || numvalor == 1 || numvalor == 2 || numvalor == 3){
+                input.push_back(flores[i][j]);
+            }
+            else{
+                output.push_back(flores[i][j]);
+            }
+            numvalor++;
+
+        }
+
+        flores_input.push_back(input);
+        flores_output.push_back(output);
+    }
+
+    /*
+    for (size_t i = 0; i < flores_input.size(); i++)
     {
         cout << "FLOR " << i << ": ";
 
-        for (size_t j = 0; j < flores[i].size(); j++)
+        for (size_t j = 0; j < flores_input[i].size(); j++)
         {
-            cout << flores[i][j] << " ";
+            cout << flores_input[i][j] << " ";
         }
 
         cout << endl;
     }
 
 
+    for (size_t i = 0; i < flores_output.size(); i++)
+    {
+        cout << "FLOR " << i << ": ";
 
+        for (size_t j = 0; j < flores_output[i].size(); j++)
+        {
+            cout << flores_output[i][j] << " ";
+        }
+
+        cout << endl;
+    }*/
+
+
+
+
+    vector<vector<double>> X_train, Y_train, X_test, Y_test;
+    double porcentaje_train = 70;
+    double porcentaje_test = 100.0 - porcentaje_train;
+    
+    double numero_train = flores_input.size() * (porcentaje_train / 100);
+    double numero_test = flores_input.size() * (porcentaje_test / 100);
+
+    cout << "filas entrenamiento " << numero_train << ", filas test " << numero_test << ": " << numero_train + numero_test << endl << endl;
+    
+    for (int i = 0; i < numero_train; i++){
+        
+        X_train.push_back(flores_input[i]);
+        Y_train.push_back(flores_output[i]);
+        //cout << i+1 << "," ;
+    }
+
+    cout << endl << endl << endl;
+    for (int i = flores_input.size() - numero_test; i < flores_input.size(); i++){
+        
+        X_test.push_back(flores_input[i]);
+        Y_test.push_back(flores_output[i]);
+        //cout << i+1 << "," ;
+    }
+
+
+
+    // ENTRENAMIENTO
+    RedBackPropagation red_iris({4, 3, 1});
+    red_iris.tasa_aprendizaje = 0.2;
+    red_iris.entrenar(X_train, Y_train, 10);
+
+
+
+
+    vector<vector<double>> predic_cat;
+
+    cout << endl;
+    for(int i = 0; i < numero_test; i++){
+        predic_cat.push_back(red_iris.forward(X_test[i]));
+        
+        for(int i = 0; i < predic_cat.size(); i++){
+            cout << "OBTENIDO " << predic_cat[i][0] << " FRENTE A " << Y_test[i][0] << endl;
+        }
+    }
+    
     return 0;
 }
