@@ -369,7 +369,8 @@ int main()
         }
     
 
-
+    cout << endl;
+    cout << "WARNING!!!: las clases cambian porque cada vez que se compila, se mezclan todas las flores, las predicciones se hacen sobre flores diferentes cada vez" << endl;
     cout << "MATRIZ DE CONFUSION DE CLASIFICACIÓN DE IRIS" << endl;
 
     cout << "CLASE 0    " << matriz.c0 << "          " << matriz.c0_mal_c1 << "          " << matriz.c0_mal_c2 << endl;
@@ -379,8 +380,17 @@ int main()
 
 
     cout << "           CLASE 0    CLASE 1     CLASE 2     (clase ficticia)" << endl;
+
+    cout << endl << "ÍNDICE" << endl;
+    cout << "CLASE O: Iris-setosa" << endl <<  "CLASE 1: Iris-versicolor" << endl << "CLASE 2: Iris-virginica" << endl;
  
-    
+    /*
+
+    Iris-setosa
+    Iris-versicolor
+    Iris-virginica
+
+*/
     
     return 0;
 }
