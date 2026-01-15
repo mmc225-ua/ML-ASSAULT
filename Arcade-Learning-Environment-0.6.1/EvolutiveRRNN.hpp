@@ -75,6 +75,7 @@ public:
     // 3 salidas (acciones: moverse a izquierda/ moverse a la derecha / atacar DEL PERSONAJE
 
     RedBackPropagation(const vector<size_t> &arquitectura) {
+        srand(time(NULL));
         for (size_t i = 1; i < arquitectura.size(); ++i) {
             // LA ENTRADA NO PORQUE LAS CAPAS ENTRADA SOLO TIENEN DATOS NO NEURONAS PREVIAS
             capas.emplace_back(arquitectura[i], arquitectura[i - 1]);
@@ -82,44 +83,89 @@ public:
     }
 
     void mutate(int degree) {
-        default_random_engine gen;
-        uniform_real_distribution<double> distribution(-degree,degree);
+        default_random_engine gen(random_device{}());
+        uniform_real_distribution<double> d(1, 1);
+        if (degree == 1) {
+            uniform_real_distribution<double> distribution(-0.05, 0.05);
+            d = distribution;
+        }
+        else if (degree == 2) {
+            uniform_real_distribution<double> distribution(-0.1, 0.1);
+            d = distribution;
+        }
+        else if (degree == 3) {
+            uniform_real_distribution<double> distribution(-0.5, 0.5);
+            d = distribution;
+        } else {
+            uniform_real_distribution<double> distribution(-1, 1);
+            d = distribution;
+        }
         for (unsigned i = 0; i < capas.size(); i++) {
             for (unsigned j = 0; j < capas[i].neuronas.size(); j++) {
-                capas[i].neuronas[j].bias += distribution(gen);
+                capas[i].neuronas[j].bias += d(gen);
                 for(unsigned k = 0; k < capas[i].neuronas[j].pesos.size(); k++) {
-                    capas[i].neuronas[j].pesos[k] += distribution(gen);
+                    capas[i].neuronas[j].pesos[k] += d(gen);
                 }
             }
         }
     }
 
     // hacia delante
-    vector<double> forward(const vector<double> &entrada) {
-        // LAS ACTIVACIONES INICIALES : VECTOR DE ESTADOS DEL JUEGO o sea todo lo recaudado QUE COMO NO SABEMOS cuantas tendremos por ahora, lo deje en tamaño variable
+    vector<double> forward(const vector<double> &entrada)
+    {
+
+        int num_capa = 0;
+
+        // esto son los 11 parametros de las personas
         vector<double> activaciones = entrada;
 
-        for (auto &capa : capas) {
+        for (auto &capa : capas)
+        {
+
             // VALORES QUE SALEN DE CADA CAPA
             vector<double> nuevas_activaciones;
 
-            // por cada neurona de la capa en la que estamos,
-            for (auto &neurona : capa.neuronas) {
+            int num_neurona = 0;
 
+            // por cada neurona de la capa en la que estamos,
+            for (auto &neurona : capa.neuronas)
+            {
+                // suma ponderada de las entradas y el bias
+
+                // por cada neurona, SUMA es su bias y la multiplicacion de los valores de la entrada de la red * los pesos de su vector de entrada (o sea que la señala desde otras neuronas)
                 double suma = neurona.bias;
 
                 // NUESTRO CONJUNTO DE DATS
-                for (size_t i = 0; i < activaciones.size(); i++) {
+                for (size_t i = 0; i < activaciones.size(); i++)
+                {
+                    // activaciones tiene el tamaño de la capa anterior
                     suma += neurona.pesos[i] * activaciones[i];
                 }
 
-                neurona.salida = sigmoid(suma);
+
+                // SI ES LA CAPA DE SALIDA, me quedo son la suma como salida
+                // SI NO, SE VA A SIGMOID
+                bool es_salida = (&capa == &capas.back());
+                neurona.salida = es_salida ? suma : sigmoid(suma);
+
                 nuevas_activaciones.push_back(neurona.salida);
+
+                // si es una capa mas, pasa a ser el vector de entrada actualizao
+
+                // no hay problema porque el vector es tamaño igual al tamaño de la capa
+                // salida de la capa es de tamaño de la capa
+
+                num_neurona++;
             }
+
             activaciones = nuevas_activaciones;
+
+            num_capa++;
         }
+
         return activaciones;
     }
+
 
 
 
