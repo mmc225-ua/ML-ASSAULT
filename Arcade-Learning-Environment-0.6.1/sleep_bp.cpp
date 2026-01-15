@@ -321,7 +321,7 @@ int main()
     */
 
     vector<vector<double>> X_train, Y_train, X_test, Y_test;
-    double porcentaje_train = 77.64;
+    double porcentaje_train = 77;
     double porcentaje_test = 100.0 - porcentaje_train;
     
     double numero_train = input_personas.size() * (porcentaje_train / 100);
@@ -394,14 +394,14 @@ int main()
     24.0/100.0, // age
     1.0/100.0, // gender
     4.0/100.0, // platf
-    500.0/100.0, // minut movil
-    400.0/100.0, // minut redes
-    30.0/100.0, // neg
+    700.0/100.0, // minut movil
+    600.0/100.0, // minut redes
+    20.0/100.0, // neg
     1.0/100.0, // pos
     12.0/100.0, // actividad fisica
     7.0/100.0, // ansiedad
-    5.0/100.0, // estres
-    5.0/100.0, // mood
+    6.0/100.0, // estres
+    2.0/100.0, // mood
     };
 
     vector<double> suenyo_bueno = red_suenyo.forward(test_persona_buenoshabitos);
