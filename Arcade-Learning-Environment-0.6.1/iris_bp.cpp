@@ -372,13 +372,13 @@ int main()
 
     cout << "MATRIZ DE CONFUSION DE CLASIFICACIÓN DE IRIS" << endl;
 
-    cout << matriz.c0 << "  " << matriz.c0_mal_c1 << "  " << matriz.c0_mal_c2 << endl;
-    cout << matriz.c1_mal_c0 << "  " << matriz.c1 << "  " << matriz.c1_mal_c2 << endl;
-    cout << matriz.c2_mal_c0 << "  " << matriz.c2_mal_c1 << "  " << matriz.c2 << endl;
+    cout << "CLASE 0    " << matriz.c0 << "          " << matriz.c0_mal_c1 << "          " << matriz.c0_mal_c2 << endl;
+    cout << "CLASE 1    " <<matriz.c1_mal_c0 << "          " << matriz.c1 << "          " << matriz.c1_mal_c2 << endl;
+    cout << "CLASE 2    " <<matriz.c2_mal_c0 << "          " << matriz.c2_mal_c1 << "          " << matriz.c2 << endl;
 
 
 
-    cout << "CLASE 0    CLASE 1     CLASE 2     (clase ficticia)" << endl;
+    cout << "           CLASE 0    CLASE 1     CLASE 2     (clase ficticia)" << endl;
  
     
     
