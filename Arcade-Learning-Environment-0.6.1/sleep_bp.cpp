@@ -349,7 +349,7 @@ int main()
 
     RedBackPropagation red_suenyo({11, 10, 1});
     red_suenyo.tasa_aprendizaje = 0.1;
-    red_suenyo.entrenar(X_train, Y_train, 10);
+    red_suenyo.entrenar(X_train, Y_train, 5000);
 
 
     vector<vector<double>> prediccion_suenyo_test;
@@ -358,8 +358,8 @@ int main()
     for(int i = 0; i < numero_test; i++){
         prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i]));
         
-        for(int i = 0; i < prediccion_suenyo_test.size(); i++){
-            cout << "OBTENIDO " << prediccion_suenyo_test[i][0] << " FRENTE A " << Y_test[i][0] << endl;
+        for(int j = 0; j < prediccion_suenyo_test.size(); j++){
+            cout << "OBTENIDO " << prediccion_suenyo_test[j][0] << " FRENTE A " << Y_test[j][0] << endl;
         }
     }
 

@@ -98,8 +98,8 @@ public:
 
     vector<double> forward(const vector<double> &entrada)
     {
-        cout << endl;
-        cout << "en forward " << endl;
+        //cout << endl;
+        //cout << "en forward " << endl;
 
         int num_capa = 0;
 
@@ -112,7 +112,7 @@ public:
             // VALORES QUE SALEN DE CADA CAPA
             vector<double> nuevas_activaciones;
 
-            cout << endl << "CAPA " << num_capa << endl;
+            //cout << endl << "CAPA " << num_capa << endl;
             int num_neurona = 0;
 
             // por cada neurona de la capa en la que estamos,
@@ -151,13 +151,13 @@ public:
                 num_neurona++;
             }
 
-            cout << "vector de entrada MODIFICADO por neuronas " << endl;
-            cout << "[";// (deberia ser mismo largo que numero de neuronas de la capa)
+            //cout << "vector de entrada MODIFICADO por neuronas " << endl;
+            //cout << "[";// (deberia ser mismo largo que numero de neuronas de la capa)
             for (int i = 0; i < nuevas_activaciones.size(); i++)
             {
-                cout << nuevas_activaciones[i] << ",";
+                //cout << nuevas_activaciones[i] << ",";
             }
-            cout << "]" << endl;
+            //cout << "]" << endl;
 
             activaciones = nuevas_activaciones;
 
@@ -170,16 +170,16 @@ public:
             bool es_salida = (&capa == &capas.back());
             if (es_salida){
 
-                cout << "ESTO ES LA SALIDA ";
+                //cout << "ESTO ES LA SALIDA ";
                 for (int i = 0; i < nuevas_activaciones.size(); i++){
-                    cout << nuevas_activaciones[i] << ",";
+                    //cout << nuevas_activaciones[i] << ",";
                 }
-                cout << endl << "SALIDA - OBJETIVO ES EL ERROR, objetivo es SUEÑO real" <<endl;
+                //cout << endl << "SALIDA - OBJETIVO ES EL ERROR, objetivo es SUEÑO real" <<endl;
             }
         }
 
 
-        cout << endl;
+        //cout << endl;
 
         return activaciones;
     }
@@ -191,7 +191,7 @@ public:
 
     void backpropagation(const vector<double> &entrada, const vector<double> objetivo)
     {
-        cout << endl << "BACKPROPAGATION" << endl;
+        //cout << endl << "BACKPROPAGATION" << endl;
         Capa &capa_salida = capas.back(); // salida.neuronas.size() ES EL TAMAÑO DE LA CAPA
 
         for (size_t i = 0; i < capa_salida.neuronas.size(); i++)
@@ -209,7 +209,7 @@ public:
 
             for (size_t i = 0; i < capas[j].neuronas.size(); i++)
             {
-                cout << "encontrar error en NEURONA " << i << " de la capa OCULTA " << j << endl;
+                //cout << "encontrar error en NEURONA " << i << " de la capa OCULTA " << j << endl;
 
                 double suma = 0.0;
 
@@ -285,7 +285,7 @@ public:
 
         for (int i = 0; i < epocas; i++)
         {
-
+            cout << "Entrenamiento en ÉPOCA: " << i << endl;
             // va a haber la misma cantidad de samples de datos enemigo y de jugador porque por cada ACCION DE ENEMIGO HAY UNA REACCION DE JUGADOR
             for (size_t i = 0; i < input.size(); i++)
             {
