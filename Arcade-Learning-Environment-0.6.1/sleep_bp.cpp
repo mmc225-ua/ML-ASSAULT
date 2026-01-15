@@ -287,22 +287,21 @@ int main()
 
     // si probais con esto imprime 0,1,2 capas, la primera NO
 
-    RedBackPropagation red({11, 20, 20, 20, 1});
-    red.tasa_aprendizaje = 0.1;
-    red.entrenar(input_personas, output_personas, 3);
+    
 
+    /*
     vector<double> test_persona {
-    35.0/100.0,
+    24.0/100.0,
     1.0/100.0,
     4.0/100.0,
-    320.0/100.0,
-    160.0/100.0,
+    30.0/100.0,
+    1.0/100.0,
     1.0/100.0,
     2.0/100.0,
-    28.0/100.0,
     2.0/100.0,
+    1.0/100.0,
     7.0/100.0,
-    6.0/100.0,
+    8.0/100.0,
     
     };
 
@@ -319,6 +318,97 @@ int main()
     cout << "DEBERIA DAR 7.4 aprox" << endl;
     cout << prediccion_suenyo[0] * 100 << endl;
 
+    */
+
+    vector<vector<double>> X_train, Y_train, X_test, Y_test;
+    double porcentaje_train = 77.64;
+    double porcentaje_test = 100.0 - porcentaje_train;
+    
+    double numero_train = input_personas.size() * (porcentaje_train / 100);
+    double numero_test = input_personas.size() * (porcentaje_test / 100);
+
+    cout << "filas entrenamiento " << numero_train << ", filas test " << numero_test << ": " << numero_train + numero_test << endl << endl;
+    
+    for (int i = 0; i < numero_train; i++){
+        
+        X_train.push_back(input_personas[i]);
+        Y_train.push_back(output_personas[i]);
+        //cout << i+1 << "," ;
+    }
+
+    cout << endl << endl << endl;
+    for (int i = input_personas.size() - numero_test; i < input_personas.size(); i++){
+        
+        X_test.push_back(input_personas[i]);
+        Y_test.push_back(output_personas[i]);
+        //cout << i+1 << "," ;
+    }
+
+
+
+
+    RedBackPropagation red_suenyo({11, 10, 1});
+    red_suenyo.tasa_aprendizaje = 0.1;
+    red_suenyo.entrenar(X_train, Y_train, 10);
+
+
+    vector<vector<double>> prediccion_suenyo_test;
+
+    cout << endl;
+    for(int i = 0; i < numero_test; i++){
+        prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i]));
+        
+        for(int i = 0; i < prediccion_suenyo_test.size(); i++){
+            cout << "OBTENIDO " << prediccion_suenyo_test[i][0] << " FRENTE A " << Y_test[i][0] << endl;
+        }
+    }
+
+   double errorPorcentualTotal = 0.0;
+   for (int i = 0; i < numero_test; i++) {
+        double error = fabs(prediccion_suenyo_test[i][0] - Y_test[i][0]) / Y_test[i][0];
+        errorPorcentualTotal += error;
+    }
+    double MAPE = (errorPorcentualTotal / numero_test) * 100.0;
+    double precision = 100.0 - MAPE;
+
+    cout << "MAPE: " << MAPE << " precisión: " << precision << endl; 
+
+
+
+    vector<double> test_persona_buenoshabitos {
+    24.0/100.0,
+    1.0/100.0,
+    4.0/100.0,
+    30.0/100.0,
+    1.0/100.0,
+    1.0/100.0,
+    2.0/100.0,
+    2.0/100.0,
+    1.0/100.0,
+    7.0/100.0,
+    8.0/100.0,
+    
+    };
+
+    vector<double> test_persona_maloshabitos {
+    24.0/100.0, // age
+    1.0/100.0, // gender
+    4.0/100.0, // platf
+    500.0/100.0, // minut movil
+    400.0/100.0, // minut redes
+    30.0/100.0, // neg
+    1.0/100.0, // pos
+    12.0/100.0, // actividad fisica
+    7.0/100.0, // ansiedad
+    5.0/100.0, // estres
+    5.0/100.0, // mood
+    };
+
+    vector<double> suenyo_bueno = red_suenyo.forward(test_persona_buenoshabitos);
+    vector<double> suenyo_malo = red_suenyo.forward(test_persona_maloshabitos);
+
+    cout << "Sueño de una persona con buenos habitos de vida y en redes: " << suenyo_bueno[0] * 100 << " horas de sueño" << endl; 
+    cout << "Sueño de una persona con malos habitos de vida y en redes: " << suenyo_malo[0] * 100 << " horas de sueño" << endl; 
 
 
     return 0;
