@@ -345,11 +345,12 @@ int main()
     }
 
 
+    
 
 
     RedBackPropagation red_suenyo({11, 10, 1});
     red_suenyo.tasa_aprendizaje = 0.1;
-    red_suenyo.entrenar(X_train, Y_train, 5000);
+    red_suenyo.entrenar(X_train, Y_train, 10000);
 
 
     vector<vector<double>> prediccion_suenyo_test;
