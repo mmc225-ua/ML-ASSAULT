@@ -5,6 +5,8 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <algorithm>
+#include <random>
 using namespace std;
 
 class Neurona
@@ -77,6 +79,26 @@ public:
         return resultado;
     }
 
+
+
+    double tanh_act(double x){
+        return tanh(x);
+    }
+    double tanh_deriv(double y){
+        return 1.0 - y * y; 
+    }
+
+
+
+    double relu(double x) {
+    return x > 0 ? x : 0;
+    }
+
+
+    double relu_derivada(double x) {
+        return x > 0 ? 1 : 0;
+    }
+
     // es cantidad de capas
     // o sea que si tenemos {2, 4, 3}
     // tenemos 2 capas de entrada
@@ -139,7 +161,7 @@ public:
                 // SI ES LA CAPA DE SALIDA, me quedo son la suma como salida
                 // SI NO, SE VA A SIGMOID
                 bool es_salida = (&capa == &capas.back());
-                neurona.salida = es_salida ? suma : sigmoid(suma);
+                neurona.salida = es_salida ? suma : relu(suma);
 
                 nuevas_activaciones.push_back(neurona.salida);
 
@@ -222,7 +244,7 @@ public:
 
                 double capasnuevas_salidas = capas[j].neuronas[i].salida;
 
-                capas[j].neuronas[i].delta_bp = suma * sigmoid_derivada(capasnuevas_salidas);
+                capas[j].neuronas[i].delta_bp = suma * relu_derivada(capasnuevas_salidas);
             }
         }
 
@@ -280,21 +302,39 @@ public:
 
     // se suponr que 1 capa oculta es suficiente para los problemas de regresión
     // en el print se ve 0 y 1 (capa de salida y oculta, la de entrada no es explicita)
-    void entrenar(const vector<vector<double>> input, const vector<vector<double>> output, int epocas)
-    {
+    double entrenar(const vector<vector<double>> &X, const vector<vector<double>> &Y, int epocas) {
 
-        for (int i = 0; i < epocas; i++)
-        {
-            cout << "Entrenamiento en ÉPOCA: " << i << endl;
-            // va a haber la misma cantidad de samples de datos enemigo y de jugador porque por cada ACCION DE ENEMIGO HAY UNA REACCION DE JUGADOR
-            for (size_t i = 0; i < input.size(); i++)
-            {
+    vector<int> indices(X.size());
+    for (int i = 0; i < indices.size(); i++) indices[i] = i;
 
-                forward(input[i]);
-                backpropagation(input[i], output[i]);
-            }
+    double mse = 0.0;
+
+    for (int e = 0; e < epocas; e++) {
+
+        // esto es para mezclar los datos cada vez
+
+        shuffle(indices.begin(), indices.end(), mt19937(random_device{}()));
+        mse = 0.0;
+
+        for (int idx : indices) {
+            auto pred = forward(X[idx]);
+            backpropagation(X[idx], Y[idx]);
+
+            for (size_t j = 0; j < pred.size(); j++)
+                mse += pow(pred[j] - Y[idx][j], 2);
         }
+
+        mse /= X.size();
+
+        //double rmse = sqrt(mse);
+        //double precision = (1 - rmse) * 100; 
+
+        
+        cout << "ÉPOCA " << e + 1 << "/" << epocas << " - MSE: " << mse << endl;
     }
+    return mse;
+}
+
 };
 
 #endif
