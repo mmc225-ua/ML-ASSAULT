@@ -358,9 +358,9 @@ int main()
     for(int i = 0; i < numero_test; i++){
         prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i]));
         
-        for(int j = 0; j < prediccion_suenyo_test.size(); j++){
-            cout << "OBTENIDO " << prediccion_suenyo_test[j][0] << " FRENTE A " << Y_test[j][0] << endl;
-        }
+        
+        cout << "OBTENIDO " << prediccion_suenyo_test[i][0] << " FRENTE A " << Y_test[i][0] << endl;
+        
     }
 
    double errorPorcentualTotal = 0.0;
