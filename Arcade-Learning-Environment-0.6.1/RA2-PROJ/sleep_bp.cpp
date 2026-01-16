@@ -350,18 +350,21 @@ int main()
 
     RedBackPropagation red_suenyo({11, 10, 1});
     red_suenyo.tasa_aprendizaje = 0.1;
-    red_suenyo.entrenar(X_train, Y_train, 10000);
+    double mse = red_suenyo.entrenar(X_train, Y_train, 5000);
 
 
     vector<vector<double>> prediccion_suenyo_test;
 
+
+    double mse_validacion = 0.0;
     cout << endl;
     for(int i = 0; i < numero_test; i++){
         prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i]));
         
         
         cout << "OBTENIDO " << prediccion_suenyo_test[i][0] << " FRENTE A " << Y_test[i][0] << endl;
-        
+        mse_validacion += pow(prediccion_suenyo_test[i][0] - Y_test[i][0], 2);
+
     }
 
    double errorPorcentualTotal = 0.0;
@@ -373,8 +376,8 @@ int main()
     double precision = 100.0 - MAPE;
 
     cout << "MAPE: " << MAPE << " precisión: " << precision << endl; 
-
-
+    cout << "MSE de entrenamiento: " << mse  << endl;
+    cout << "MSE de validacion: " << mse_validacion << endl << endl;
 
     vector<double> test_persona_buenoshabitos {
     24.0/100.0,
