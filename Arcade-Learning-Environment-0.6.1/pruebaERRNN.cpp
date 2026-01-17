@@ -33,22 +33,22 @@ void printVector(const vector<double> &v) {
 }
 
 void next_gen(vector<RedBackPropagation> &p) {
-    unsigned chosen = (POBLATION_SIZE * 5) / 100;
+    unsigned chosen = (POBLATION_SIZE * 10) / 100;
     unsigned rows = ((POBLATION_SIZE/chosen) - 1) / chosen;
     for (unsigned i = 0; i < chosen; i++) {
         for (unsigned j = 0; j < rows*chosen; j++) {
             RedBackPropagation r = p[i];
-            r.mutate(1);
+            r.mutate(2);
             p[(rows * i + 1) * chosen + j] = r;
         }
     }
     if (((POBLATION_SIZE/chosen) - 1) % chosen != 0) {
         RedBackPropagation r = p[1];
-        for (unsigned i = (rows*(chosen) + 1) * chosen; i < POBLATION_SIZE - 5; i++) {
+        for (unsigned i = (rows*(chosen) + 1) * chosen; i < POBLATION_SIZE - chosen; i++) {
             r.mutate(3);
             p[i] = r;
         }
-        for (unsigned i = POBLATION_SIZE - 6; i < POBLATION_SIZE; i++){
+        for (unsigned i = POBLATION_SIZE - chosen; i < POBLATION_SIZE; i++){
             r.mutate(4);
             p[i] = r;
         }
@@ -58,6 +58,7 @@ void next_gen(vector<RedBackPropagation> &p) {
 void train(vector<RedBackPropagation>& p, const vector<vector<double>> &inputs, vector<double> outputs) {
     for (unsigned i = 0; i < TOURNAMENT_ROUNDS; i++) {
         double best_acc = 0;
+        int best_net = 0;
         vector<double> vaccurracy;
         for (unsigned j = 0; j < POBLATION_SIZE; j++) {
             double accurracy = 0;
@@ -82,16 +83,15 @@ void train(vector<RedBackPropagation>& p, const vector<vector<double>> &inputs, 
                     else if (result[0] > 0)
                         accurracy -= 0.25;
                 }
-                if (i == TOURNAMENT_ROUNDS - 1 && j == 0)
-                    cout << j << " " << result[0] << " -> " << outputs[k]  << " " << accurracy << "\n";
             }
             vaccurracy.emplace_back(accurracy);
             if (accurracy > best_acc) {
                 best_acc = accurracy;
+                best_net = j;
             }
         }
         bubbleSort(p,vaccurracy);
-        cout << i << " " << best_acc << "\n";
+        cout << i << " " << best_net <<  ":" << best_acc << "\n";
         next_gen(p);
 
     }
@@ -160,6 +160,10 @@ void test( RedBackPropagation &p, const vector<vector<double>> &inputs, const ve
         }
     }
     std::cout << "Total: "<< full_size << "\n";
+    double recall_a, recall_p;
+    recall_p = (correct_p / (correct_p + wrong_p)) * 100;
+    recall_a = (correct_a / (correct_a + wrong_a)) * 100;
+    std::cout << "Recall Presence: " << recall_p << "%\nRecall Absence: " << recall_a << "\n";
     std::cout << "Presence guessed: "<< correct_p << " Presence missed: " << wrong_p << "\n";
     std::cout << "Absence guessed: "<< correct_a << " Absence missed: " << wrong_a << "\n";
     std::cout << "Guessed(%): " << ((correct_a + correct_p) / (inputs.size() - INPUTS_SIZE)) * 100 << "%\n";
@@ -171,7 +175,7 @@ int main() {
     parse(inputs, outputs);
     vector<RedBackPropagation> poblacion;
     for (unsigned i = 0; i < POBLATION_SIZE; i++) {
-        RedBackPropagation red({inputs[0].size(), 6, 4, 1});
+        RedBackPropagation red({inputs[0].size(), 10, 1});
         red.tasa_aprendizaje = 0.1; // a ver yo en dp usaba esta pero no se si aqui funcionara igual
         poblacion.emplace_back(red);
     }
