@@ -18,6 +18,7 @@ public:
     // tamaño del vector de pesos sera el tamaño (numero de neuronas) de la capaa anterior
     vector<double> pesos;
 
+    double sump;
     double bias;
 
     double salida;   // salida de la neurona
@@ -25,7 +26,7 @@ public:
 
     // la salida de la neurona no seria necesario ponerla creo porque seria la entrada de la siguiente capa, o sea que si es la ultima capa, esa ya tiene una entrada y ninguna salida.
 
-    Neurona(size_t tam_capa_anterior) : pesos(tam_capa_anterior, 0.0), bias(0.0), salida(0.0), delta_bp(0.0)
+    Neurona(size_t tam_capa_anterior) : pesos(tam_capa_anterior, 0.0), sump(0.0), bias(0.0), salida(0.0), delta_bp(0.0)
     {
 
         // partimos de que los pesos de una red se inicializan de forma aleatoria
@@ -34,7 +35,10 @@ public:
 
         for (double &peso : pesos)
         {
-            peso = (((double)rand()) / RAND_MAX) - 0.5;
+            // inicializacion xavier vi que funciona mejor 
+            double limite = sqrt(6.0 / (tam_capa_anterior + 1));
+            peso = ((double)rand() / RAND_MAX) * 2 * limite - limite;
+
         }
     }
 };
@@ -56,12 +60,15 @@ public:
     }
 };
 
+
+
+
 class RedBackPropagation
 {
 public:
     vector<Capa> capas;
 
-    double tasa_aprendizaje = 0.1; // es lo que dimos en DP, lo vamos a ir ajustando
+    double tasa_aprendizaje;// = 0.1; // es lo que dimos en DP, lo vamos a ir ajustando
 
     // FUNC SIGMOIDEA Y LA DERIVADA
 
@@ -80,11 +87,14 @@ public:
     }
 
 
-
-    double tanh_act(double x){
-        return tanh(x);
+    // si no lo pongo se le va la olla
+    double mi_tanh(double x){
+        //if(x > 20) x = 20;
+        //if(x < -20) x = -20;
+        return std::tanh(x);
     }
-    double tanh_deriv(double y){
+
+    double tanh_derivada(double y){
         return 1.0 - y * y; 
     }
 
@@ -118,7 +128,7 @@ public:
 
     // hacia delante
 
-    vector<double> forward(const vector<double> &entrada)
+    vector<double> forward(const vector<double> &entrada, char func)
     {
         //cout << endl;
         //cout << "en forward " << endl;
@@ -161,7 +171,34 @@ public:
                 // SI ES LA CAPA DE SALIDA, me quedo son la suma como salida
                 // SI NO, SE VA A SIGMOID
                 bool es_salida = (&capa == &capas.back());
-                neurona.salida = es_salida ? suma : relu(suma);
+
+
+                double val = 0.0;
+                if (func == 'r'){
+
+                    //cout << endl << "si es relu" << endl;
+                    val = relu(suma);
+                }
+                else if(func == 't'){
+                    val = mi_tanh(suma);
+                }
+                else if(func == 's'){
+                    val = sigmoid(suma);
+                }
+                else{
+
+                val = 0.0; }
+
+
+                neurona.sump = suma;
+
+                if (es_salida) {
+                    neurona.salida = suma; 
+                } else {
+                    neurona.salida = val;    
+                }
+
+                ///neurona.salida = es_salida ? suma : val;
 
                 nuevas_activaciones.push_back(neurona.salida);
 
@@ -211,7 +248,7 @@ public:
 
     
 
-    void backpropagation(const vector<double> &entrada, const vector<double> objetivo)
+    void backpropagation(const vector<double> &entrada, const vector<double> objetivo, char func)
     {
         //cout << endl << "BACKPROPAGATION" << endl;
         Capa &capa_salida = capas.back(); // salida.neuronas.size() ES EL TAMAÑO DE LA CAPA
@@ -244,7 +281,22 @@ public:
 
                 double capasnuevas_salidas = capas[j].neuronas[i].salida;
 
-                capas[j].neuronas[i].delta_bp = suma * relu_derivada(capasnuevas_salidas);
+                double val = 0.0;
+                if (func == 'r') {
+                    val = relu_derivada(capas[j].neuronas[i].sump);
+                }
+                else if (func == 't') {
+                    val = tanh_derivada(capas[j].neuronas[i].salida);
+                }
+                else if (func == 's') {
+                    val = sigmoid_derivada(capas[j].neuronas[i].salida);
+                }
+
+
+
+               
+
+                capas[j].neuronas[i].delta_bp = suma * val;
             }
         }
 
@@ -302,10 +354,14 @@ public:
 
     // se suponr que 1 capa oculta es suficiente para los problemas de regresión
     // en el print se ve 0 y 1 (capa de salida y oculta, la de entrada no es explicita)
-    double entrenar(const vector<vector<double>> &X, const vector<vector<double>> &Y, int epocas) {
+    double entrenar(const vector<vector<double>> &X, const vector<vector<double>> &Y, int epocas, char activ) {
+
+
 
     vector<int> indices(X.size());
     for (int i = 0; i < indices.size(); i++) indices[i] = i;
+
+    
 
     double mse = 0.0;
 
@@ -317,8 +373,8 @@ public:
         mse = 0.0;
 
         for (int idx : indices) {
-            auto pred = forward(X[idx]);
-            backpropagation(X[idx], Y[idx]);
+            auto pred = forward(X[idx], activ);
+            backpropagation(X[idx], Y[idx], activ);
 
             for (size_t j = 0; j < pred.size(); j++)
                 mse += pow(pred[j] - Y[idx][j], 2);

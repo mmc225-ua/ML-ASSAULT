@@ -141,7 +141,7 @@ int main()
                     // como esto no es editable y lo voy a dejar asi no voy a hacer un vector de parametros evitables (simplicidad)
                     if (!(numerodato == 0)) // el id da igual porque solo va en orden
                     {
-                       cout << numeroreal << " " << palabra << "|" << endl;
+                       //cout << numeroreal << " " << palabra << "|" << endl;
 
                         double dato = arreglodato(palabra, numeroreal);
                         flor.push_back(dato);
@@ -159,7 +159,7 @@ int main()
             double dato = arreglodato(palabra, numeroreal);
             vector<double> onehot;
 
-            cout << "PLANTA ES TIPO " << dato << endl;
+            //cout << "PLANTA ES TIPO " << dato << endl;
             if (dato == 0){
                 onehot = {
                     1, 0, 0
@@ -213,7 +213,7 @@ int main()
 
 
     random_device rd;
-    mt19937 gen(rd());
+    mt19937 gen(12345);
     shuffle(flores.begin(), flores.end(), gen);
 
 
@@ -242,7 +242,7 @@ int main()
         flores_output.push_back(output);
     }
 
-   
+   /*
     for (size_t i = 0; i < flores_input.size(); i++)
     {
         cout << "FLOR " << i << ": ";
@@ -268,7 +268,7 @@ int main()
         cout << endl;
     }
 
-
+    */
 
 
     vector<vector<double>> X_train, Y_train, X_test, Y_test;
@@ -299,8 +299,14 @@ int main()
 
     // ENTRENAMIENTO
     RedBackPropagation red_iris({4, 6, 3});
-    red_iris.tasa_aprendizaje = 0.1;
-    red_iris.entrenar(X_train, Y_train, 5000);
+    red_iris.tasa_aprendizaje = 0.01;
+
+    char activ = ' ';
+    cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
+    cin >> activ;
+
+
+    double mse = red_iris.entrenar(X_train, Y_train, 10000, activ);
 
 
 
@@ -314,7 +320,7 @@ int main()
     MConfusion matriz;
 
     for(int i = 0; i < numero_test; i++){
-        predic_cat.push_back(red_iris.forward(X_test[i]));
+        predic_cat.push_back(red_iris.forward(X_test[i], activ));
         
         
             int mayor = mayor_valor(predic_cat[i][0], predic_cat[i][1], predic_cat[i][2]);
@@ -322,7 +328,7 @@ int main()
             int mayor_real = mayor_valor(Y_test[i][0], Y_test[i][1], Y_test[i][2]);
             // mayor = 0 (primero), 1 (segundo) , 2(tercero)
 
-            cout << "PRED " << i << ": " << predic_cat[i][0] << ","<< predic_cat[i][1] << "," << predic_cat[i][2] << ": " <<mayor << " Y " << Y_test[i][0] << "," << Y_test[i][1] << "," << Y_test[i][2] << endl;
+            cout << "PRED " << i << ": " << predic_cat[i][0] << ","<< predic_cat[i][1] << "," << predic_cat[i][2] << ": " <<mayor << "º Y " << Y_test[i][0] << "," << Y_test[i][1] << "," << Y_test[i][2] << endl;
             pred_norm.push_back(mayor);
 
 
@@ -367,10 +373,91 @@ int main()
 
         
         }
+
+
+    double mse_validacion = 0.0;
+    int N = predic_cat.size();
+
+    for(int i = 0; i < N; i++){
+        double sample_error = 0.0;
+        for(int j = 0; j < 3; j++){
+            double diff = Y_test[i][j] - predic_cat[i][j];
+            sample_error += diff * diff;
+        }
+        sample_error /= 3.0;  // hay 3 clases onehot
+        mse_validacion += sample_error;
+    }
+
+    mse_validacion /= N; 
+
+
+    double MAPE = 0.0;
+
+    for(int i = 0; i < N; i++){
+
+
+        int clase_real = mayor_valor(Y_test[i][0], Y_test[i][1], Y_test[i][2]); 
+        double pred_val = predic_cat[i][clase_real];
+        double ape = abs(1.0 - pred_val); 
+
+        //cout << "Comparando mio " << pred_val << " con " << clase_real << endl;
+        
+        MAPE += ape;
+    }
+
+    MAPE = (MAPE / N) * 100.0;
+
+
+
+
+    int correctos = 0;
+
+
+    for(int i = 0; i < N; i++){
+        int clase_real = mayor_valor(Y_test[i][0], Y_test[i][1], Y_test[i][2]);   // índice del 1
+        int clase_pred = mayor_valor(predic_cat[i][0], predic_cat[i][1], predic_cat[i][2]); // índice del max
+
+        if(clase_real == clase_pred) correctos++;
+    }
+
+    double precision = (double(correctos) / N) * 100.0;
+
+
+    //vector<int, int> recall;
+
+
+    int tp[3] = {0, 0, 0};   
+    int fn[3] = {0, 0, 0}; 
+
+    for(int i = 0; i < N; i++){
+        int clase_real = mayor_valor( Y_test[i][0], Y_test[i][1], Y_test[i][2]);
+
+        int clase_pred = mayor_valor( predic_cat[i][0], predic_cat[i][1], predic_cat[i][2]);
+
+        if(clase_real == clase_pred){
+            tp[clase_real]++;
+        } else {
+            fn[clase_real]++;
+        }
+    }
+
+ 
+    for(int c = 0; c < 3; c++){
+        double recall = 0.0;
+        if(tp[c] + fn[c] > 0){
+            recall = (double)tp[c] / (tp[c] + fn[c]);
+        }
+
+        cout << "Recall clase " << c << ": " << recall * 100 << "%" << endl;
+    }
+
     
+    cout << "MAPE: " << MAPE << " precisión: " << precision << "%"<< endl; 
+    cout << "MSE de entrenamiento: " << mse  << endl;
+    cout << "MSE de validacion: " << mse_validacion << endl << endl;
 
     cout << endl;
-    cout << "WARNING!!!: las clases cambian porque cada vez que se compila, se mezclan todas las flores, las predicciones se hacen sobre flores diferentes cada vez" << endl;
+    //cout << "WARNING!!!: las clases cambian porque cada vez que se compila, se mezclan todas las flores, las predicciones se hacen sobre flores diferentes cada vez" << endl;
     cout << "MATRIZ DE CONFUSION DE CLASIFICACIÓN DE IRIS" << endl;
 
     cout << "CLASE 0    " << matriz.c0 << "          " << matriz.c0_mal_c1 << "          " << matriz.c0_mal_c2 << endl;
