@@ -4,7 +4,7 @@
 #include <sstream> // Necesario para stringstream
 #include <string>
 #include <cstring>
-#include "RRNN.hpp"
+#include "BP_RRNN.hpp"
 using namespace std;
 
 struct Persona
@@ -350,18 +350,26 @@ int main()
 
     RedBackPropagation red_suenyo({11, 10, 1});
     red_suenyo.tasa_aprendizaje = 0.1;
-    red_suenyo.entrenar(X_train, Y_train, 10000);
+
+    char activ = ' ';
+    cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
+    cin >> activ;
+
+    double mse = red_suenyo.entrenar(X_train, Y_train, 5000, activ);
 
 
     vector<vector<double>> prediccion_suenyo_test;
 
+
+    double mse_validacion = 0.0;
     cout << endl;
     for(int i = 0; i < numero_test; i++){
-        prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i]));
+        prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i], activ));
         
         
         cout << "OBTENIDO " << prediccion_suenyo_test[i][0] << " FRENTE A " << Y_test[i][0] << endl;
-        
+        mse_validacion += pow(prediccion_suenyo_test[i][0] - Y_test[i][0], 2);
+
     }
 
    double errorPorcentualTotal = 0.0;
@@ -373,8 +381,8 @@ int main()
     double precision = 100.0 - MAPE;
 
     cout << "MAPE: " << MAPE << " precisión: " << precision << endl; 
-
-
+    cout << "MSE de entrenamiento: " << mse  << endl;
+    cout << "MSE de validacion: " << mse_validacion << endl << endl;
 
     vector<double> test_persona_buenoshabitos {
     24.0/100.0,
@@ -405,8 +413,8 @@ int main()
     2.0/100.0, // mood
     };
 
-    vector<double> suenyo_bueno = red_suenyo.forward(test_persona_buenoshabitos);
-    vector<double> suenyo_malo = red_suenyo.forward(test_persona_maloshabitos);
+    vector<double> suenyo_bueno = red_suenyo.forward(test_persona_buenoshabitos, activ);
+    vector<double> suenyo_malo = red_suenyo.forward(test_persona_maloshabitos, activ);
 
     cout << "Sueño de una persona con buenos habitos de vida y en redes: " << suenyo_bueno[0] * 100 << " horas de sueño" << endl; 
     cout << "Sueño de una persona con malos habitos de vida y en redes: " << suenyo_malo[0] * 100 << " horas de sueño" << endl; 

@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-#include "RRNN.hpp"
+#include "BP_RRNN.hpp"
 
 int main()
 {
