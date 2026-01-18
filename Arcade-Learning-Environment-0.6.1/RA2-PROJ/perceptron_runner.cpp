@@ -12,7 +12,7 @@
 #include <ctime>
 
 using namespace std;
-
+// Quita los espacios en blanco del principio y del final de un texto
 static inline string trim(const string& s) {
     size_t a = 0;
     while (a < s.size() && isspace((unsigned char)s[a])) a++;
@@ -21,6 +21,7 @@ static inline string trim(const string& s) {
     return s.substr(a, b - a);
 }
 
+//Divide un texto por comas y devuelve una lista de trozos ya limpios
 static vector<string> split_by_comma(const string& s) {
     vector<string> out;
     string cur;
@@ -65,6 +66,7 @@ static vector<string> parse_csv_line(const string& line) {
     return fields;
 }
 
+//Intenta convertir un texto a número. Devuelve true si pudo y false si no y acaba el programa
 static bool try_double(const string& s, double& out) {
     string t = trim(s);
     if (t.empty()) return false;
@@ -74,8 +76,8 @@ static bool try_double(const string& s, double& out) {
     return true;
 }
 
+//Convierte una fecha tipo  M/D/YYYY ó M/D/YY a día del año (0...366). Si falla, marca ok= false
 static double parse_date_to_day_of_year(const string& s, bool& ok) {
-    // Emula la idea: "M/D/YYYY" o "M/D/YY". Si falla -> ok=false
     string t = trim(s);
     ok = false;
     if (t.empty()) return 0.0;
@@ -134,6 +136,8 @@ struct DatasetMixedResult {
     map<string, vector<string>> cat_map; // col -> valores ordenados
 };
 
+//Lee el CSV completo y construye la matriz x (números + one-hot de categóricas + fechas convertidas) y el vector de etiquetas y_str.
+//Crea también los nombres de las características y el mapa de categorías
 static DatasetMixedResult load_dataset_mixed_types(
     const string& path,
     const string& target_col,
@@ -306,7 +310,7 @@ static DatasetMixedResult load_dataset_mixed_types(
     return out;
 }
 
-// Normalización Min-Max
+// Normalización Min-Max [0..1]
 static vector<vector<double>> minmax_normalize(const vector<vector<double>>& X) {
     int n = (int)X.size();
     int d = (int)X[0].size();
@@ -333,7 +337,7 @@ static vector<vector<double>> minmax_normalize(const vector<vector<double>>& X) 
     return Xn;
 }
 
-// Split
+// Mezcla los indices 0...n-1 con una semilla y los separa en train/test según el porcentaje
 static pair<vector<int>, vector<int>> split_idx(int n, double test_ratio, int seed) {
     vector<int> idx(n);
     for (int i = 0; i < n; i++) idx[i] = i;
@@ -347,6 +351,7 @@ static pair<vector<int>, vector<int>> split_idx(int n, double test_ratio, int se
     return {tr, te};
 }
 
+//Devuelve una copia del vector v cogiendo solo las posiciones indicadas por idx (para sacar y_train, y_test)
 template <typename T>
 static vector<T> subset_vec(const vector<T>& v, const vector<int>& idx) {
     vector<T> out;
@@ -355,6 +360,7 @@ static vector<T> subset_vec(const vector<T>& v, const vector<int>& idx) {
     return out;
 }
 
+//Igual que subset_vec pero para matrices X. Devuelve solo las filas indicadas
 static vector<vector<double>> subset_X(const vector<vector<double>>& X, const vector<int>& idx) {
     vector<vector<double>> out;
     out.reserve(idx.size());
@@ -395,6 +401,7 @@ static vector<double> train_perceptron(const vector<vector<double>>& X, const ve
     return w;
 }
 
+//Calcula la puntución lineal (s=w*x+b) sin aplicar umbral. Se usa para ver qué clase gana en OvR
 static double score_binary(const vector<double>& x, const vector<double>& w) {
     int d = (int)x.size();
     double s = w[d];
@@ -402,6 +409,7 @@ static double score_binary(const vector<double>& x, const vector<double>& w) {
     return s;
 }
 
+//Entrena un perceptrón binario por cada clase y devuelve todos los modelos guardados en un mapa
 static map<int, vector<double>> train_ovr(const vector<vector<double>>& X, const vector<int>& y,
                                          const vector<int>& classes, int epochs, double lr, int seed) {
     map<int, vector<double>> W;
@@ -415,6 +423,7 @@ static map<int, vector<double>> train_ovr(const vector<vector<double>>& X, const
     return W;
 }
 
+//Predice la clase calculando el score de cada perceptrón y devolviendo la clase con puntuación más alta
 static int predict_ovr(const vector<double>& x, const map<int, vector<double>>& W, const vector<int>& classes) {
     int best_k = -1;
     double best_s = 0.0;
@@ -432,7 +441,7 @@ static int predict_ovr(const vector<double>& x, const map<int, vector<double>>& 
 }
 
 
-// Métricas multiclase
+// Construye la matriz de confusión multiclase contando aciertos/errores por clase
 static vector<vector<int>> confusion_matrix_multiclass(const vector<int>& y_true,
                                                        const vector<int>& y_pred,
                                                        int K) {
@@ -445,12 +454,14 @@ static vector<vector<int>> confusion_matrix_multiclass(const vector<int>& y_true
     return cm;
 }
 
+// Calcula el porcentaje de predicciones correctas
 static double accuracy(const vector<int>& y_true, const vector<int>& y_pred) {
     int ok = 0;
     for (size_t i = 0; i < y_true.size(); i++) if (y_true[i] == y_pred[i]) ok++;
     return y_true.empty() ? 0.0 : (double)ok / (double)y_true.size();
 }
 
+//A partir de la matriz de confusión calcula precision,recall y F1 de cada clase y luego hace el promedio macro
 static void precision_recall_f1_macro(const vector<vector<int>>& cm,
                                       double& p_macro, double& r_macro, double& f1_macro) {
     int K = (int)cm.size();
@@ -482,6 +493,7 @@ static void precision_recall_f1_macro(const vector<vector<int>>& cm,
     f1_macro = mean(f1s);
 }
 
+// Imprime la matriz de confusión 
 static void print_confusion_matrix_multiclass(const vector<vector<int>>& cm,
                                               const vector<string>& class_names) {
     cout << "\nMatriz de confusión (Pred vs Real):\n";
@@ -512,15 +524,7 @@ struct Args {
     int seed = 0;
 };
 
-static void usage(const char* prog) {
-    cerr << "Uso:\n";
-    cerr << "  " << prog
-         << " --csv <ruta> --target <col> --classes <c1,c2,...>\n"
-         << "    [--drop <col1,col2,...>] [--date_cols <col1,...>] [--cat_cols <col1,...>]\n"
-         << "    [--epochs N] [--lr X] [--test_ratio R] [--seed S]\n";
-    exit(1);
-}
-
+//Lee los argumentos de consola, los valida, y devuelve una estructura Args con todo
 static Args parse_args(int argc, char** argv) {
     Args a;
     for (int i = 1; i < argc; i++) {
