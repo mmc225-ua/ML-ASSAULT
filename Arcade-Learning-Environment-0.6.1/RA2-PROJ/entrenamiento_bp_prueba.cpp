@@ -30,6 +30,19 @@ int main()
     cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
     cin >> activ;
 
+    if(activ == 's'){
+        cout << "USANDO ACTIVACIÓN SIGMOID" << endl;
+    }
+    else if (activ == 'r'){
+        cout << "USANDO ACTIVACIÓN RELU" << endl;
+    }
+    else if (activ == 't'){
+        cout << "USANDO ACTIVACIÓN TANH" << endl;
+    }
+    else{
+        cout << "SIN ACTIVACIÓN (LINEAL)" << endl;
+    }
+
 
     RedBackPropagation red({2, 6, 2});
     red.tasa_aprendizaje = 0.1; // a ver yo en dp usaba esta pero no se si aqui funcionara igual
