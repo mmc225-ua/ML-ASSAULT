@@ -560,10 +560,7 @@ static Args parse_args(int argc, char** argv) {
     return a;
 }
 
-// ------------------------------------------------------------
 // MAIN
-// ------------------------------------------------------------
-
 int main(int argc, char** argv) {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
