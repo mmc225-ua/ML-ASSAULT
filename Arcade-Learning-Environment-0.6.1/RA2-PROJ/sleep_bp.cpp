@@ -327,7 +327,7 @@ int main()
     double numero_train = input_personas.size() * (porcentaje_train / 100);
     double numero_test = input_personas.size() * (porcentaje_test / 100);
 
-    cout << "filas entrenamiento " << numero_train << ", filas test " << numero_test << ": " << numero_train + numero_test << endl << endl;
+    cout << "filas entrenamiento " << numero_train << ", filas test " << numero_test << ": " << numero_train + numero_test << endl;
     
     for (int i = 0; i < numero_train; i++){
         
@@ -336,7 +336,7 @@ int main()
         //cout << i+1 << "," ;
     }
 
-    cout << endl << endl << endl;
+    
     for (int i = input_personas.size() - numero_test; i < input_personas.size(); i++){
         
         X_test.push_back(input_personas[i]);
@@ -355,6 +355,20 @@ int main()
     cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
     cin >> activ;
 
+
+    if(activ == 's'){
+        cout << "USANDO ACTIVACIÓN SIGMOID" << endl;
+    }
+    else if (activ == 'r'){
+        cout << "USANDO ACTIVACIÓN RELU" << endl;
+    }
+    else if (activ == 't'){
+        cout << "USANDO ACTIVACIÓN TANH" << endl;
+    }
+    else{
+        cout << "SIN ACTIVACIÓN (LINEAL)" << endl;
+    }
+
     double mse = red_suenyo.entrenar(X_train, Y_train, 5000, activ);
 
 
@@ -362,7 +376,7 @@ int main()
 
 
     double mse_validacion = 0.0;
-    cout << endl;
+    
     for(int i = 0; i < numero_test; i++){
         prediccion_suenyo_test.push_back(red_suenyo.forward(X_test[i], activ));
         

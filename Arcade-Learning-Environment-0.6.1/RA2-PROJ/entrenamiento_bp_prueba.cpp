@@ -26,15 +26,32 @@ int main()
         output.push_back({y1, y2});
     }
 
+    char activ = ' ';
+    cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
+    cin >> activ;
+
+    if(activ == 's'){
+        cout << "USANDO ACTIVACIÓN SIGMOID" << endl;
+    }
+    else if (activ == 'r'){
+        cout << "USANDO ACTIVACIÓN RELU" << endl;
+    }
+    else if (activ == 't'){
+        cout << "USANDO ACTIVACIÓN TANH" << endl;
+    }
+    else{
+        cout << "SIN ACTIVACIÓN (LINEAL)" << endl;
+    }
+
 
     RedBackPropagation red({2, 6, 2});
     red.tasa_aprendizaje = 0.1; // a ver yo en dp usaba esta pero no se si aqui funcionara igual
-    red.entrenar(input, output, 6000); 
+    red.entrenar(input, output, 6000, activ); 
 
     // ahora la pruebo FORWARD PARA OBTENER UN RESULTADO A PARTIR DE UN ENEMIGO
 
     vector<double> test_input = {0.6, 0.2};
-    vector<double> prediccion_output = red.forward(test_input);
+    vector<double> prediccion_output = red.forward(test_input, activ);
 
 
     cout << "INPUT: " << test_input[0] << ", " << test_input[1];

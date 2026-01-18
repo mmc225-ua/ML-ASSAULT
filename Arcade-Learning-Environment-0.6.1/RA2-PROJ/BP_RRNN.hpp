@@ -187,7 +187,7 @@ public:
                 }
                 else{
 
-                val = 0.0; }
+                val = suma; }
 
 
                 neurona.sump = suma;

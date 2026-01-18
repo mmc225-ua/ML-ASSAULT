@@ -153,7 +153,7 @@ int main()
                     palabra = "";
                 }
             }
-            cout << palabra << endl << endl;
+            
             
             // aqui es de la clasificación, ONE HOT
             double dato = arreglodato(palabra, numeroreal);
@@ -287,7 +287,7 @@ int main()
         //cout << i+1 << "," ;
     }
 
-    cout << endl << endl << endl;
+    
     for (int i = flores_input.size() - numero_test; i < flores_input.size(); i++){
         
         X_test.push_back(flores_input[i]);
@@ -304,6 +304,19 @@ int main()
     char activ = ' ';
     cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
     cin >> activ;
+
+    if(activ == 's'){
+        cout << "USANDO ACTIVACIÓN SIGMOID" << endl;
+    }
+    else if (activ == 'r'){
+        cout << "USANDO ACTIVACIÓN RELU" << endl;
+    }
+    else if (activ == 't'){
+        cout << "USANDO ACTIVACIÓN TANH" << endl;
+    }
+    else{
+        cout << "SIN ACTIVACIÓN (LINEAL)" << endl;
+    }
 
 
     double mse = red_iris.entrenar(X_train, Y_train, 10000, activ);

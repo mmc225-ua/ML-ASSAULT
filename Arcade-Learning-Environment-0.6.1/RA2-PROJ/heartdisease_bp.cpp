@@ -220,6 +220,20 @@ int main()
     cout << "Qué tipo de activación quieres? (s: sigmoid, r:relu, t:tanh) ";
     cin >> activ;
 
+    if(activ == 's'){
+        cout << "USANDO ACTIVACIÓN SIGMOID" << endl;
+    }
+    else if (activ == 'r'){
+        cout << "USANDO ACTIVACIÓN RELU" << endl;
+    }
+    else if (activ == 't'){
+        cout << "USANDO ACTIVACIÓN TANH" << endl;
+    }
+    else{
+        cout << "SIN ACTIVACIÓN (LINEAL)" << endl;
+    }
+
+
     RedBackPropagation red_heart({13, 10, 2});
     red_heart.tasa_aprendizaje = 0.01;
     double mse = red_heart.entrenar(X_train, Y_train, 10000, activ);
