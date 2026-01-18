@@ -50,7 +50,7 @@ public:
     }
 };
 
-class RedBackPropagation {
+class EvolutiveRRNN {
 public:
     vector<Capa> capas;
 
@@ -74,7 +74,7 @@ public:
 
     // 3 salidas (acciones: moverse a izquierda/ moverse a la derecha / atacar DEL PERSONAJE
 
-    RedBackPropagation(const vector<size_t> &arquitectura) {
+    EvolutiveRRNN(const vector<size_t> &arquitectura) {
         srand(time(NULL));
         for (size_t i = 1; i < arquitectura.size(); ++i) {
             // LA ENTRADA NO PORQUE LAS CAPAS ENTRADA SOLO TIENEN DATOS NO NEURONAS PREVIAS
