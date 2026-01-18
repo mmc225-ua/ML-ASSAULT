@@ -1,5 +1,10 @@
 **INSTRUCCIONES DE EJECUCIÓN**
 
+**PERCEPTRÓN**
+
+
+**RED NEURONAL CON BACKPROPAGATION**
+
 - Prueba inicial de red con backpropagation: 
     g++ -o pbp entrenamiento_bp_prueba.cpp
     ./pbp
@@ -20,3 +25,4 @@ al ejecutarlo pedirá introducir una función de activación (s: sigmoid, r:relu
 
 
 
+**RED NEURONAL CON PESOS GENÉTICOS**
