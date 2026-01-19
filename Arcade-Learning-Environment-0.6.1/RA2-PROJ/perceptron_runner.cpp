@@ -21,6 +21,8 @@ static inline string trim(const string& s) {
     return s.substr(a, b - a);
 }
 
+
+
 //Divide un texto por comas y devuelve una lista de trozos ya limpios
 static vector<string> split_by_comma(const string& s) {
     vector<string> out;
@@ -523,6 +525,15 @@ struct Args {
     double test_ratio = 0.2;
     int seed = 0;
 };
+
+static void usage(const char* prog) {
+    cerr << "Uso:\n";
+    cerr << "  " << prog
+         << " --csv <ruta> --target <col> --classes <c1,c2,...>\n"
+         << "    [--drop <col1,col2,...>] [--date_cols <col1,...>] [--cat_cols <col1,...>]\n"
+         << "    [--epochs N] [--lr X] [--test_ratio R] [--seed S]\n";
+    exit(1);
+}
 
 //Lee los argumentos de consola, los valida, y devuelve una estructura Args con todo
 static Args parse_args(int argc, char** argv) {

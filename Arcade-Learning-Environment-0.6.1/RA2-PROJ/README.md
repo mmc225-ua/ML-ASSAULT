@@ -16,6 +16,10 @@ Las opciones disponibles son (Todas opcionales) :
     --test_ratio R ( por defecto 0.2)
     --seed S ( por defecto 0)
 
+Por ejemplo, con el DATASET del Iris.csv : 
+    ./perceptron_runner --csv ./Iris.csv --target Species  --classes "Iris-setosa,Iris-versicolor,Iris-virginica"
+
+
 **RED NEURONAL CON BACKPROPAGATION**
 
 - Prueba inicial de red con backpropagation: 
