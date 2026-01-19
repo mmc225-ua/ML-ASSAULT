@@ -8,7 +8,7 @@ using namespace std;
 #include "EvolutiveRRNN.hpp"
 
 const unsigned POBLATION_SIZE = 300;
-const unsigned TOURNAMENT_ROUNDS = 100;
+const unsigned TOURNAMENT_ROUNDS = 50;
 const unsigned INPUTS_SIZE = 1500;
 
 void bubbleSort(vector<EvolutiveRRNN> &p, vector<double> &performance) {
@@ -104,6 +104,10 @@ void train(vector<EvolutiveRRNN>& p, const vector<vector<double>> &inputs, vecto
             vaccurracy.emplace_back(accurracy);
         }
         bubbleSort(p,vaccurracy);
+        double aux = vaccurracy[0];
+        if (vaccurracy[0] < 0)
+            aux = 0;
+        cout << "Iteración: " << i << "/" << TOURNAMENT_ROUNDS << " " << (aux / (double)INPUTS_SIZE) * 100 << " %\n";
         next_gen(p);
 
     }
