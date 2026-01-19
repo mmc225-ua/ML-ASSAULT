@@ -1,20 +1,20 @@
-**INSTRUCCIONES DE EJECUCIÓN**
+**INSTRUCCIONES DE EJECUCIÓN** <br>
 
 **PERCEPTRÓN**
-Desde la carpeta donde está perceptrón_runner.cpp : 
+Desde la carpeta donde está perceptrón_runner.cpp : <br>
     g++ -std=c++11 -O2 -o perceptron_runner perceptron_runner.cpp
 
-Esto generará el ejecutable perceptron_runner. Para ejecutarlo debemos escribir lo siguiente por línea de comandos : 
+Esto generará el ejecutable perceptron_runner. Para ejecutarlo debemos escribir lo siguiente por línea de comandos : <br>
     ./perceptron_runner --csv <ruta_csv> --target <columna_objetivo> --classes "<c1,c2,...>" [opciones...]
 
 Las opciones disponibles son (Todas opcionales) : 
-    --drop "<col1,col2,...>" : columnas a eliminar
-    --date_cols "<col1,col2,...>" : columnas de fecha (se convierten a día del año)
-    --cat_cols "<col1,col2,...>" : columnas categóricas (one-hot encoding)
-    --epochs N (por defecto 20)
-    --lr X ( por defecto 0.1)
-    --test_ratio R ( por defecto 0.2)
-    --seed S ( por defecto 0)
+   - --drop "<col1,col2,...>" : columnas a eliminar
+   - --date_cols "<col1,col2,...>" : columnas de fecha (se convierten a día del año)
+   - --cat_cols "<col1,col2,...>" : columnas categóricas (one-hot encoding)
+   - --epochs N (por defecto 20)
+   - --lr X ( por defecto 0.1)
+   - --test_ratio R ( por defecto 0.2)
+   - --seed S ( por defecto 0)
 
 **RED NEURONAL CON BACKPROPAGATION**
 
@@ -39,7 +39,7 @@ al ejecutarlo pedirá introducir una función de activación (s: sigmoid, r:relu
 
 
 **RED NEURONAL CON PESOS GENÉTICOS**
-Para probar la red neuronal ir a pruebaERRNN.cpp
+Para probar la red neuronal ir a **pruebaERRNN.cpp** <br>
 Antes de ejecutar cualquier prueba hay tres parámetros en el codigo que se pueden cambiar:
 - INPUTS_SIZE: Número de filas con las que entrenar la red, se evaluará con el resto
 - TOURNAMENT_ROUNDS: Número de rondas que se harán para obtener la mejor red (epochs).
