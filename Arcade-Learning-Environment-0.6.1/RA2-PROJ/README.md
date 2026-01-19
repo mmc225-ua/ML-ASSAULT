@@ -1,6 +1,6 @@
 **INSTRUCCIONES DE EJECUCIÓN** <br>
 
-**PERCEPTRÓN**
+**PERCEPTRÓN** <br>
 Desde la carpeta donde está perceptrón_runner.cpp : <br>
     g++ -std=c++11 -O2 -o perceptron_runner perceptron_runner.cpp
 
@@ -38,7 +38,7 @@ al ejecutarlo pedirá introducir una función de activación (s: sigmoid, r:relu
 
 
 
-**RED NEURONAL CON PESOS GENÉTICOS**
+**RED NEURONAL CON PESOS GENÉTICOS** <br>
 Para probar la red neuronal ir a **pruebaERRNN.cpp** <br>
 Antes de ejecutar cualquier prueba hay tres parámetros en el codigo que se pueden cambiar:
 - INPUTS_SIZE: Número de filas con las que entrenar la red, se evaluará con el resto
@@ -54,4 +54,4 @@ También dentro encontrarás funciones para cada uno de los tipos de usos de la 
     - fitness_pred: Suma valores positivos proporcionales dependiendo dentro de que umbral cae o negativos si cae fuera de cualquiera
     - test_pred: Imprime unicamente el error medio 
 
-Luego en la línea 250, está disponible para modificar la arquitectura de la red
+Luego en la línea 250, está disponible para modificar la arquitectura de la red. Actualmente en el fichero esta para probar mental_health_social_media_dataset.csv. Si se quisiera probar la red con la funcion de clasificación habría que cambiar en el main la llama de test_pred por test_class y en la función train, donde pone fitness_pred sustituirlo por fitness_class, y por útlimo utilizar el parser correspondiente a cualquiera de las opciones que se quiera probar, como lo son Heart_Disease_Prediction e Iris_Shuffled. 
