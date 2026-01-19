@@ -276,7 +276,6 @@ void parse_heart_disease(vector<vector<double>> &inputs, vector<vector<double>> 
 
 
 void test_class( EvolutiveRRNN &p, const vector<vector<double>> &inputs, const vector<vector<double>> &outputs) {
-    
     vector<int> nclass(outputs[0].size(), 0);
     //Vector de m x m, donde m es el número de clases
     vector<vector<int>> difussion_map(outputs[0].size(),vector<int>(outputs[0].size(),0)); 
@@ -304,9 +303,11 @@ void test_class( EvolutiveRRNN &p, const vector<vector<double>> &inputs, const v
         cout << "\tCLASE " << i;    
     }
     cout << "\n";
+    
     double total_correct, total_number;
     total_correct = total_number = 0.0;
-    for (unsigned i = 0; i << difussion_map.size(); i++) {
+    cout << "DIFMAP: " << difussion_map.size() << "\n";
+     for (unsigned i = 0; i < difussion_map.size(); i++) {
         double recall = ((double)difussion_map[i][i] / nclass[i]) * 100;
         cout << "Recall Class" << i << ": " << recall << " %\n";
         total_correct += difussion_map[i][i];
