@@ -109,7 +109,7 @@ void train(vector<EvolutiveRRNN>& p, const vector<vector<double>> &inputs, vecto
     }
 }
 
-void parse_mental_health(vector<vector<double>> &inputs, vector<vector<double>> &outputs) {
+void parse(vector<vector<double>> &inputs, vector<vector<double>> &outputs) {
     fstream file;
     file.open("mental_health_social_media_dataset.csv", ios::in);
     vector<double> row;
@@ -243,15 +243,13 @@ void test_pred( EvolutiveRRNN &p, const vector<vector<double>> &inputs, const ve
 int main() {
     vector<vector<double>> inputs;
     vector<vector<double>> outputs;
-    parse_mental_health(inputs, outputs);
-
+    parse(inputs, outputs);
     vector<EvolutiveRRNN> poblacion;
     for (unsigned i = 0; i < POBLATION_SIZE; i++) {
         EvolutiveRRNN red({inputs[0].size(), 15, 10, 5, outputs[0].size()});
         red.tasa_aprendizaje = 0.1; // a ver yo en dp usaba esta pero no se si aqui funcionara igual
         poblacion.emplace_back(red);
     }
-    
     train(poblacion, inputs, outputs);
     test_pred(poblacion[0], inputs, outputs);
     return 0;

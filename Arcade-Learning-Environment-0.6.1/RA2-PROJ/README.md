@@ -39,3 +39,19 @@ al ejecutarlo pedirá introducir una función de activación (s: sigmoid, r:relu
 
 
 **RED NEURONAL CON PESOS GENÉTICOS**
+Para probar la red neuronal ir a pruebaERRNN.cpp
+Antes de ejecutar cualquier prueba hay tres parámetros en el codigo que se pueden cambiar:
+- INPUTS_SIZE: Número de filas con las que entrenar la red, se evaluará con el resto
+- TOURNAMENT_ROUNDS: Número de rondas que se harán para obtener la mejor red (epochs).
+- POPULATION_SIZE: Número de redes con las que se hace el torneo.
+
+También dentro encontrarás funciones para cada uno de los tipos de usos de la red:
+- Clasificación
+    - fitness_class: Suma valores positivos proporcionales a cuanto de cerca está del lado al que deberían estar y son penalizados por estar en el contrario
+    - test_class: Aporta información como el recall de cada una de las clases, la matriz de difusión y el porcentaje de acierto total
+
+- Predicción
+    - fitness_pred: Suma valores positivos proporcionales dependiendo dentro de que umbral cae o negativos si cae fuera de cualquiera
+    - test_pred: Imprime unicamente el error medio 
+
+Luego en la línea 250, está disponible para modificar la arquitectura de la red
