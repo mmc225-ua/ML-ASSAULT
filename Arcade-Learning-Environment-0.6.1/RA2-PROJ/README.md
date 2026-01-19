@@ -54,4 +54,7 @@ También dentro encontrarás funciones para cada uno de los tipos de usos de la 
     - fitness_pred: Suma valores positivos proporcionales dependiendo dentro de que umbral cae o negativos si cae fuera de cualquiera
     - test_pred: Imprime unicamente el error medio 
 
-Luego en la línea 250, está disponible para modificar la arquitectura de la red. Actualmente en el fichero esta para probar mental_health_social_media_dataset.csv. Si se quisiera probar la red con la funcion de clasificación habría que cambiar en el main la llama de test_pred por test_class y en la función train, donde pone fitness_pred sustituirlo por fitness_class, y por útlimo utilizar el parser correspondiente a cualquiera de las opciones que se quiera probar, como lo son Heart_Disease_Prediction e Iris_Shuffled. 
+Luego en la línea 250, está disponible para modificar la arquitectura de la red. Actualmente en el fichero esta para probar mental_health_social_media_dataset.csv. Si se quisiera probar la red con la funcion de clasificación habría que cambiar en el main la llama de test_pred por test_class y en la función train, donde pone fitness_pred sustituirlo por fitness_class, y por útlimo utilizar el parser correspondiente a cualquiera de las opciones que se quiera probar, como lo son Heart_Disease_Prediction e Iris_Shuffled. <br>
+Para compilarlo: <br>
+g++ -o test pruebaERRNN.cpp <br>
+./test
